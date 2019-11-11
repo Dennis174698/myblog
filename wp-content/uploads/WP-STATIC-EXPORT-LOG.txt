@@ -1,0 +1,527 @@
+2019-11-11 11:56:48
+PHP VERSION 7.2.24-0ubuntu0.18.04.1
+OS VERSION Linux dennis-VirtualBox 4.15.0-29-generic #31-Ubuntu SMP Tue Jul 17 15:39:52 UTC 2018 x86_64
+WP VERSION 5.2.4
+WP URL http://localhost/wordpress
+WP SITEURL http://localhost/wordpress
+WP HOME http://localhost/wordpress
+WP ADDRESS http://localhost/wordpress
+PLUGIN VERSION 6.6.6
+VIA WP-CLI? 
+STATIC EXPORT URL http://Dennis174698.github.io/myblog/
+PERMALINK STRUCTURE /index.php/%year%/%monthnum%/%day%/%postname%/
+SERVER SOFTWARE Apache/2.4.29 (Ubuntu)
+Active plugins:
+simply-static/simply-static.php
+static-html-output-plugin/wp2static.php
+Plugin options:
+additionalUrls: 
+allowOfflineUsage: 
+baseHREF: 
+baseUrl: http://Dennis174698.github.io/myblog
+baseUrl-bitbucket: 
+baseUrl-bunnycdn: 
+baseUrl-folder: 
+baseUrl-ftp: 
+baseUrl-github: http://Dennis174698.github.io/myblog
+baseUrl-gitlab: 
+baseUrl-netlify: 
+baseUrl-s3: 
+baseUrl-zip: 
+baseUrl-zip: 
+basicAuthPassword: *******************
+basicAuthUser: 
+bbBranch: 
+bbPath: 
+bbRepo: 
+bbToken: *******************
+bunnycdnStorageZoneAccessKey: *******************
+bunnycdnPullZoneAccessKey: *******************
+bunnycdnPullZoneID: 
+bunnycdnStorageZoneName: 
+bunnycdnRemotePath: 
+cfDistributionId: 
+completionEmail: 
+crawl_delay: 0
+crawl_increment: 1
+crawlPort: 
+debug_mode: 1
+detection_level: everything
+delayBetweenAPICalls: 0
+deployBatchSize: 1
+excludeURLs: 
+ftpPassword: *******************
+ftpRemotePath: 
+ftpServer: 
+ftpPort: 
+ftpTLS: 
+ftpUsername: 
+ghBranch: gh-pages
+ghCommitMessage: 
+ghPath: 
+ghRepo: Dennis174698/myblog
+ghToken: *******************
+glBranch: 
+glPath: 
+glProject: 
+glToken: *******************
+netlifyHeaders: 
+netlifyPersonalAccessToken: *******************
+netlifyRedirects: 
+netlifySiteID: 
+removeConditionalHeadComments: 1
+removeHTMLComments: 1
+removeWPLinks: 1
+removeWPMeta: 1
+rewrite_rules: 
+rename_rules: 
+s3Bucket: 
+s3Key: 
+s3Region: 
+s3RemotePath: 
+s3Secret: *******************
+selected_deployment_option: github
+targetFolder: /var/www/html/wordpress/mystaticsite
+useActiveFTP: 
+useBaseHref: 
+useBasicAuth: 
+useRelativeURLs: 1
+Installed extensions:
+Core
+date
+libxml
+openssl
+pcre
+zlib
+filter
+hash
+Reflection
+SPL
+sodium
+session
+standard
+apache2handler
+mysqlnd
+PDO
+xml
+bz2
+calendar
+ctype
+curl
+dom
+mbstring
+fileinfo
+ftp
+gd
+gettext
+iconv
+json
+mapi
+exif
+mysqli
+pdo_mysql
+Phar
+posix
+readline
+shmop
+SimpleXML
+sockets
+sysvmsg
+sysvsem
+sysvshm
+tokenizer
+wddx
+xmlreader
+xmlwriter
+xsl
+Zend OPcache
+Exclusion rules wp-json
+Crawling /
+Adding discovered URL: /wp-includes/css/dist/block-library/style.min.css
+Adding discovered URL: /wp-includes/css/dist/block-library/theme.min.css
+Adding discovered URL: /wp-content/themes/twentysixteen/genericons/genericons.css
+Adding discovered URL: /wp-content/themes/twentysixteen/style.css
+Adding discovered URL: /wp-content/themes/twentysixteen/css/blocks.css
+Adding discovered URL: /wp-includes/js/jquery/jquery.js
+Adding discovered URL: /wp-includes/js/jquery/jquery-migrate.min.js
+Adding discovered URL: /
+Adding discovered URL: /wp-content/themes/twentysixteen/js/skip-link-focus-fix.js
+Adding discovered URL: /wp-content/themes/twentysixteen/js/functions.js
+SAVING / to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/index.html
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /favicon.ico
+BAD RESPONSE STATUS (404): /favicon.ico
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /index.php/2019/11/11/hello-world/
+Adding discovered URL: /wp-includes/css/dist/block-library/style.min.css
+Adding discovered URL: /wp-includes/css/dist/block-library/theme.min.css
+Adding discovered URL: /wp-content/themes/twentysixteen/genericons/genericons.css
+Adding discovered URL: /wp-content/themes/twentysixteen/style.css
+Adding discovered URL: /wp-content/themes/twentysixteen/css/blocks.css
+Adding discovered URL: /wp-includes/js/jquery/jquery.js
+Adding discovered URL: /wp-includes/js/jquery/jquery-migrate.min.js
+Adding discovered URL: /
+Adding discovered URL: /wp-content/themes/twentysixteen/js/skip-link-focus-fix.js
+Adding discovered URL: /wp-content/themes/twentysixteen/js/functions.js
+SAVING /index.php/2019/11/11/hello-world/ to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/index.php/2019/11/11/hello-world/index.html
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /index.php/category/uncategorized/
+Adding discovered URL: /wp-includes/css/dist/block-library/style.min.css
+Adding discovered URL: /wp-includes/css/dist/block-library/theme.min.css
+Adding discovered URL: /wp-content/themes/twentysixteen/genericons/genericons.css
+Adding discovered URL: /wp-content/themes/twentysixteen/style.css
+Adding discovered URL: /wp-content/themes/twentysixteen/css/blocks.css
+Adding discovered URL: /wp-includes/js/jquery/jquery.js
+Adding discovered URL: /wp-includes/js/jquery/jquery-migrate.min.js
+Adding discovered URL: /
+Adding discovered URL: /wp-content/themes/twentysixteen/js/skip-link-focus-fix.js
+Adding discovered URL: /wp-content/themes/twentysixteen/js/functions.js
+SAVING /index.php/category/uncategorized/ to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/index.php/category/uncategorized/index.html
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /index.php/category/uncategorized/page/1
+Adding discovered URL: /wp-includes/css/dist/block-library/style.min.css
+Adding discovered URL: /wp-includes/css/dist/block-library/theme.min.css
+Adding discovered URL: /wp-content/themes/twentysixteen/genericons/genericons.css
+Adding discovered URL: /wp-content/themes/twentysixteen/style.css
+Adding discovered URL: /wp-content/themes/twentysixteen/css/blocks.css
+Adding discovered URL: /wp-includes/js/jquery/jquery.js
+Adding discovered URL: /wp-includes/js/jquery/jquery-migrate.min.js
+Adding discovered URL: /
+Adding discovered URL: /wp-content/themes/twentysixteen/js/skip-link-focus-fix.js
+Adding discovered URL: /wp-content/themes/twentysixteen/js/functions.js
+SAVING /index.php/category/uncategorized/page/1 to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/index.php/category/uncategorized/page/1/index.html
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /index.php/sample-page/
+Adding discovered URL: /wp-includes/css/dist/block-library/style.min.css
+Adding discovered URL: /wp-includes/css/dist/block-library/theme.min.css
+Adding discovered URL: /wp-content/themes/twentysixteen/genericons/genericons.css
+Adding discovered URL: /wp-content/themes/twentysixteen/style.css
+Adding discovered URL: /wp-content/themes/twentysixteen/css/blocks.css
+Adding discovered URL: /wp-includes/js/jquery/jquery.js
+Adding discovered URL: /wp-includes/js/jquery/jquery-migrate.min.js
+Adding discovered URL: /
+Adding discovered URL: /wp-admin/
+Adding discovered URL: /wp-content/themes/twentysixteen/js/skip-link-focus-fix.js
+Adding discovered URL: /wp-content/themes/twentysixteen/js/functions.js
+SAVING /index.php/sample-page/ to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/index.php/sample-page/index.html
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /robots.txt
+BAD RESPONSE STATUS (404): /robots.txt
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /sitemap.xml
+BAD RESPONSE STATUS (404): /sitemap.xml
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wordpress/
+BAD RESPONSE STATUS (404): /wordpress/
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wordpress/index.php/
+BAD RESPONSE STATUS (404): /wordpress/index.php/
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wordpress/index.php/2019/
+BAD RESPONSE STATUS (404): /wordpress/index.php/2019/
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wordpress/index.php/2019/11/
+BAD RESPONSE STATUS (404): /wordpress/index.php/2019/11/
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wordpress/index.php/2019/11/11/
+BAD RESPONSE STATUS (404): /wordpress/index.php/2019/11/11/
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wordpress/index.php/2019/11/11/hello-world/
+BAD RESPONSE STATUS (404): /wordpress/index.php/2019/11/11/hello-world/
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wordpress/index.php/sample-page/
+BAD RESPONSE STATUS (404): /wordpress/index.php/sample-page/
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/css/blocks.css
+SAVING /wp-content/themes/twentysixteen/css/blocks.css to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/css/blocks.css
+Memory allocated by crawl script: 4096
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/css/editor-blocks.css
+SAVING /wp-content/themes/twentysixteen/css/editor-blocks.css to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/css/editor-blocks.css
+Memory allocated by crawl script: 4096
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/css/editor-style.css
+SAVING /wp-content/themes/twentysixteen/css/editor-style.css to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/css/editor-style.css
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/css/ie.css
+SAVING /wp-content/themes/twentysixteen/css/ie.css to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/css/ie.css
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/css/ie7.css
+SAVING /wp-content/themes/twentysixteen/css/ie7.css to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/css/ie7.css
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/css/ie8.css
+SAVING /wp-content/themes/twentysixteen/css/ie8.css to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/css/ie8.css
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/genericons/Genericons.eot
+SAVING /wp-content/themes/twentysixteen/genericons/Genericons.eot to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/genericons/Genericons.eot
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/genericons/Genericons.svg
+SAVING /wp-content/themes/twentysixteen/genericons/Genericons.svg to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/genericons/Genericons.svg
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/genericons/Genericons.ttf
+SAVING /wp-content/themes/twentysixteen/genericons/Genericons.ttf to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/genericons/Genericons.ttf
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/genericons/Genericons.woff
+SAVING /wp-content/themes/twentysixteen/genericons/Genericons.woff to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/genericons/Genericons.woff
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/genericons/genericons.css
+SAVING /wp-content/themes/twentysixteen/genericons/genericons.css to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/genericons/genericons.css
+Memory allocated by crawl script: 4096
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/js/color-scheme-control.js
+SAVING /wp-content/themes/twentysixteen/js/color-scheme-control.js to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/js/color-scheme-control.js
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/js/customize-preview.js
+SAVING /wp-content/themes/twentysixteen/js/customize-preview.js to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/js/customize-preview.js
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/js/functions.js
+SAVING /wp-content/themes/twentysixteen/js/functions.js to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/js/functions.js
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/js/html5.js
+SAVING /wp-content/themes/twentysixteen/js/html5.js to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/js/html5.js
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/js/keyboard-image-navigation.js
+SAVING /wp-content/themes/twentysixteen/js/keyboard-image-navigation.js to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/js/keyboard-image-navigation.js
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/js/skip-link-focus-fix.js
+SAVING /wp-content/themes/twentysixteen/js/skip-link-focus-fix.js to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/js/skip-link-focus-fix.js
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/rtl.css
+SAVING /wp-content/themes/twentysixteen/rtl.css to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/rtl.css
+Memory allocated by crawl script: 4096
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/screenshot.png
+SAVING /wp-content/themes/twentysixteen/screenshot.png to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/screenshot.png
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-content/themes/twentysixteen/style.css
+SAVING /wp-content/themes/twentysixteen/style.css to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/style.css
+Memory allocated by crawl script: 6144
+Exclusion rules wp-json
+Crawling /文章/page/1
+BAD RESPONSE STATUS (404): /文章/page/1
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /页面/page/1
+BAD RESPONSE STATUS (404): /页面/page/1
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-admin/
+Adding discovered URL: /wp-includes/css/dashicons.min.css
+Adding discovered URL: /wp-includes/css/buttons.min.css
+Adding discovered URL: /wp-admin/css/forms.min.css
+Adding discovered URL: /wp-admin/css/l10n.min.css
+Adding discovered URL: /wp-admin/css/login.min.css
+Adding discovered URL: /
+SAVING /wp-admin/ to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408//wp-admin/index.html
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-includes/css/dist/block-library/style.min.css
+SAVING /wp-includes/css/dist/block-library/style.min.css to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-includes/css/dist/block-library/style.min.css
+Memory allocated by crawl script: 4096
+Exclusion rules wp-json
+Crawling /wp-includes/css/dist/block-library/theme.min.css
+SAVING /wp-includes/css/dist/block-library/theme.min.css to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-includes/css/dist/block-library/theme.min.css
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-includes/js/jquery/jquery-migrate.min.js
+SAVING /wp-includes/js/jquery/jquery-migrate.min.js to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-includes/js/jquery/jquery-migrate.min.js
+Memory allocated by crawl script: 2048
+Exclusion rules wp-json
+Crawling /wp-includes/js/jquery/jquery.js
+SAVING /wp-includes/js/jquery/jquery.js to /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-includes/js/jquery/jquery.js
+Memory allocated by crawl script: 2048
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/index.html to index.html in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":{"oid":"ebbe492f8f73fd7d50e258218867215718ed0618","byteSize":49530}}}}
+index.html path exists in GitHub
+Updating index.html in GitHub
+API response code 200
+API response body {"content":{"name":"index.html","path":"index.html","sha":"21965500baf31f6f491825c577c08365aeb31adc","size":6817,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/index.html?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/index.html","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/21965500baf31f6f491825c577c08365aeb31adc","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/index.html","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/index.html?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/21965500baf31f6f491825c577c08365aeb31adc","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/index.html"}},"commit":{"sha":"cceb6134d467b4362700df3755ca2c4e55c132a8","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OmNjZWI2MTM0ZDQ2N2I0MzYyNzAwZGYzNzU1Y2EyYzRlNTVjMTMyYTg=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/cceb6134d467b4362700df3755ca2c4e55c132a8","html_url":"https://github.com/Dennis174698/myblog/commit/cceb6134d467b4362700df3755ca2c4e55c132a8","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:56:59Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:56:59Z"},"tree":{"sha":"aa68d2fe4d973adfea5d6649a023894edbd259da","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/aa68d2fe4d973adfea5d6649a023894edbd259da"},"message":"WP2Static UPDATE index.html","parents":[{"sha":"72d8e43afaeb7671859bd82ff4ee817bf3c22eed","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/72d8e43afaeb7671859bd82ff4ee817bf3c22eed","html_url":"https://github.com/Dennis174698/myblog/commit/72d8e43afaeb7671859bd82ff4ee817bf3c22eed"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/index.php/2019/11/11/hello-world/index.html to index.php/2019/11/11/hello-world/index.html in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":{"oid":"a327eb7761c5498db10d71e4654e697c62f2b0ad","byteSize":52937}}}}
+index.php/2019/11/11/hello-world/index.html path exists in GitHub
+Updating index.php/2019/11/11/hello-world/index.html in GitHub
+API response code 200
+API response body {"content":{"name":"index.html","path":"index.php/2019/11/11/hello-world/index.html","sha":"82e26490930810e4370c4ef6c87bf8bc7c51268e","size":10014,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/index.php/2019/11/11/hello-world/index.html?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/index.php/2019/11/11/hello-world/index.html","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/82e26490930810e4370c4ef6c87bf8bc7c51268e","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/index.php/2019/11/11/hello-world/index.html","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/index.php/2019/11/11/hello-world/index.html?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/82e26490930810e4370c4ef6c87bf8bc7c51268e","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/index.php/2019/11/11/hello-world/index.html"}},"commit":{"sha":"ce043b21ea350612479e30ae5dfedee9ee1b5513","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OmNlMDQzYjIxZWEzNTA2MTI0NzllMzBhZTVkZmVkZWU5ZWUxYjU1MTM=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/ce043b21ea350612479e30ae5dfedee9ee1b5513","html_url":"https://github.com/Dennis174698/myblog/commit/ce043b21ea350612479e30ae5dfedee9ee1b5513","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:03Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:03Z"},"tree":{"sha":"7619c2ee42b35bdec5d184fd9d5303d7887a6ae6","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/7619c2ee42b35bdec5d184fd9d5303d7887a6ae6"},"message":"WP2Static UPDATE index.php/2019/11/11/hello-world/index.html","parents":[{"sha":"cceb6134d467b4362700df3755ca2c4e55c132a8","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/cceb6134d467b4362700df3755ca2c4e55c132a8","html_url":"https://github.com/Dennis174698/myblog/commit/cceb6134d467b4362700df3755ca2c4e55c132a8"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/index.php/category/uncategorized/index.html to index.php/category/uncategorized/index.html in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":{"oid":"5729b3969e3603a3cee735e5251b8d319f3e59b7","byteSize":49345}}}}
+index.php/category/uncategorized/index.html path exists in GitHub
+Updating index.php/category/uncategorized/index.html in GitHub
+API response code 200
+API response body {"content":{"name":"index.html","path":"index.php/category/uncategorized/index.html","sha":"230357c2e23fcbb05c12fe8d540937a25c4f658d","size":6940,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/index.php/category/uncategorized/index.html?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/index.php/category/uncategorized/index.html","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/230357c2e23fcbb05c12fe8d540937a25c4f658d","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/index.php/category/uncategorized/index.html","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/index.php/category/uncategorized/index.html?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/230357c2e23fcbb05c12fe8d540937a25c4f658d","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/index.php/category/uncategorized/index.html"}},"commit":{"sha":"4a9f6fd21c3604a691d703a04fceb81e168238dc","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OjRhOWY2ZmQyMWMzNjA0YTY5MWQ3MDNhMDRmY2ViODFlMTY4MjM4ZGM=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/4a9f6fd21c3604a691d703a04fceb81e168238dc","html_url":"https://github.com/Dennis174698/myblog/commit/4a9f6fd21c3604a691d703a04fceb81e168238dc","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:05Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:05Z"},"tree":{"sha":"1939f3b0cda356cce493fc0d08e1bf2322f55773","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/1939f3b0cda356cce493fc0d08e1bf2322f55773"},"message":"WP2Static UPDATE index.php/category/uncategorized/index.html","parents":[{"sha":"ce043b21ea350612479e30ae5dfedee9ee1b5513","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/ce043b21ea350612479e30ae5dfedee9ee1b5513","html_url":"https://github.com/Dennis174698/myblog/commit/ce043b21ea350612479e30ae5dfedee9ee1b5513"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/index.php/category/uncategorized/page/1/index.html to index.php/category/uncategorized/page/1/index.html in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":{"oid":"5729b3969e3603a3cee735e5251b8d319f3e59b7","byteSize":49345}}}}
+index.php/category/uncategorized/page/1/index.html path exists in GitHub
+Updating index.php/category/uncategorized/page/1/index.html in GitHub
+API response code 200
+API response body {"content":{"name":"index.html","path":"index.php/category/uncategorized/page/1/index.html","sha":"230357c2e23fcbb05c12fe8d540937a25c4f658d","size":6940,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/index.php/category/uncategorized/page/1/index.html?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/index.php/category/uncategorized/page/1/index.html","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/230357c2e23fcbb05c12fe8d540937a25c4f658d","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/index.php/category/uncategorized/page/1/index.html","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/index.php/category/uncategorized/page/1/index.html?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/230357c2e23fcbb05c12fe8d540937a25c4f658d","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/index.php/category/uncategorized/page/1/index.html"}},"commit":{"sha":"0d4e611fe45bccaaac89b955cfef18902fa5b832","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OjBkNGU2MTFmZTQ1YmNjYWFhYzg5Yjk1NWNmZWYxODkwMmZhNWI4MzI=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/0d4e611fe45bccaaac89b955cfef18902fa5b832","html_url":"https://github.com/Dennis174698/myblog/commit/0d4e611fe45bccaaac89b955cfef18902fa5b832","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:07Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:07Z"},"tree":{"sha":"6a15202dc54be07f0077707dd639ada0fefcfb32","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/6a15202dc54be07f0077707dd639ada0fefcfb32"},"message":"WP2Static UPDATE index.php/category/uncategorized/page/1/index.html","parents":[{"sha":"4a9f6fd21c3604a691d703a04fceb81e168238dc","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/4a9f6fd21c3604a691d703a04fceb81e168238dc","html_url":"https://github.com/Dennis174698/myblog/commit/4a9f6fd21c3604a691d703a04fceb81e168238dc"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/index.php/sample-page/index.html to index.php/sample-page/index.html in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":{"oid":"d4a426a4ed6e533a1d99d6adbbc584e3e0b3a7bb","byteSize":47126}}}}
+index.php/sample-page/index.html path exists in GitHub
+Updating index.php/sample-page/index.html in GitHub
+API response code 200
+API response body {"content":{"name":"index.html","path":"index.php/sample-page/index.html","sha":"9f4cb3ae7630ee15e77084417e1a2224adca2611","size":6534,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/index.php/sample-page/index.html?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/index.php/sample-page/index.html","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/9f4cb3ae7630ee15e77084417e1a2224adca2611","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/index.php/sample-page/index.html","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/index.php/sample-page/index.html?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/9f4cb3ae7630ee15e77084417e1a2224adca2611","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/index.php/sample-page/index.html"}},"commit":{"sha":"77b631c2d7e92ae3d9b0bef84585521e95af53aa","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0Ojc3YjYzMWMyZDdlOTJhZTNkOWIwYmVmODQ1ODU1MjFlOTVhZjUzYWE=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/77b631c2d7e92ae3d9b0bef84585521e95af53aa","html_url":"https://github.com/Dennis174698/myblog/commit/77b631c2d7e92ae3d9b0bef84585521e95af53aa","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:09Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:09Z"},"tree":{"sha":"d8fe625481c7e565ff81c3228d6b8916c9c64695","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/d8fe625481c7e565ff81c3228d6b8916c9c64695"},"message":"WP2Static UPDATE index.php/sample-page/index.html","parents":[{"sha":"0d4e611fe45bccaaac89b955cfef18902fa5b832","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/0d4e611fe45bccaaac89b955cfef18902fa5b832","html_url":"https://github.com/Dennis174698/myblog/commit/0d4e611fe45bccaaac89b955cfef18902fa5b832"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-admin/index.html to wp-admin/index.html in GitHub
+Skipping wp-admin/index.html as identical to deploy cache
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/css/blocks.css to wp-content/themes/twentysixteen/css/blocks.css in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/css/blocks.css in GitHub
+API response code 201
+API response body {"content":{"name":"blocks.css","path":"wp-content/themes/twentysixteen/css/blocks.css","sha":"1d4b04597bc1baee801bfec16f663d614e736fcb","size":6399,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/css/blocks.css?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/css/blocks.css","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/1d4b04597bc1baee801bfec16f663d614e736fcb","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/css/blocks.css","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/css/blocks.css?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/1d4b04597bc1baee801bfec16f663d614e736fcb","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/css/blocks.css"}},"commit":{"sha":"58624997a4f16038d1aa698844f68a3e28532428","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OjU4NjI0OTk3YTRmMTYwMzhkMWFhNjk4ODQ0ZjY4YTNlMjg1MzI0Mjg=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/58624997a4f16038d1aa698844f68a3e28532428","html_url":"https://github.com/Dennis174698/myblog/commit/58624997a4f16038d1aa698844f68a3e28532428","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:12Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:12Z"},"tree":{"sha":"6cb85d534d91db6ba774f78f96a61a7c6c8667fe","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/6cb85d534d91db6ba774f78f96a61a7c6c8667fe"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/css/blocks.css","parents":[{"sha":"77b631c2d7e92ae3d9b0bef84585521e95af53aa","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/77b631c2d7e92ae3d9b0bef84585521e95af53aa","html_url":"https://github.com/Dennis174698/myblog/commit/77b631c2d7e92ae3d9b0bef84585521e95af53aa"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/css/editor-blocks.css to wp-content/themes/twentysixteen/css/editor-blocks.css in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/css/editor-blocks.css in GitHub
+API response code 201
+API response body {"content":{"name":"editor-blocks.css","path":"wp-content/themes/twentysixteen/css/editor-blocks.css","sha":"0c54de6bf44fc1d0ff13a2e7f26b9e6ba8244ef5","size":11237,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/css/editor-blocks.css?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/css/editor-blocks.css","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/0c54de6bf44fc1d0ff13a2e7f26b9e6ba8244ef5","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/css/editor-blocks.css","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/css/editor-blocks.css?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/0c54de6bf44fc1d0ff13a2e7f26b9e6ba8244ef5","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/css/editor-blocks.css"}},"commit":{"sha":"ed8fdb8cd122f5fe4536325029e1cf65879c684c","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OmVkOGZkYjhjZDEyMmY1ZmU0NTM2MzI1MDI5ZTFjZjY1ODc5YzY4NGM=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/ed8fdb8cd122f5fe4536325029e1cf65879c684c","html_url":"https://github.com/Dennis174698/myblog/commit/ed8fdb8cd122f5fe4536325029e1cf65879c684c","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:15Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:15Z"},"tree":{"sha":"060a06cca24cc375e85b574ba358b0d22d417f80","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/060a06cca24cc375e85b574ba358b0d22d417f80"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/css/editor-blocks.css","parents":[{"sha":"58624997a4f16038d1aa698844f68a3e28532428","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/58624997a4f16038d1aa698844f68a3e28532428","html_url":"https://github.com/Dennis174698/myblog/commit/58624997a4f16038d1aa698844f68a3e28532428"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/css/editor-style.css to wp-content/themes/twentysixteen/css/editor-style.css in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/css/editor-style.css in GitHub
+API response code 201
+API response body {"content":{"name":"editor-style.css","path":"wp-content/themes/twentysixteen/css/editor-style.css","sha":"b27f810385d4f5dbb8363aa2566c03231e531fdc","size":5628,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/css/editor-style.css?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/css/editor-style.css","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/b27f810385d4f5dbb8363aa2566c03231e531fdc","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/css/editor-style.css","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/css/editor-style.css?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/b27f810385d4f5dbb8363aa2566c03231e531fdc","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/css/editor-style.css"}},"commit":{"sha":"658fc7cfea1e043a27706a704de4c485756631a7","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OjY1OGZjN2NmZWExZTA0M2EyNzcwNmE3MDRkZTRjNDg1NzU2NjMxYTc=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/658fc7cfea1e043a27706a704de4c485756631a7","html_url":"https://github.com/Dennis174698/myblog/commit/658fc7cfea1e043a27706a704de4c485756631a7","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:18Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:18Z"},"tree":{"sha":"eb7c216e5d514f74daa9f599cd529dbac4501c71","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/eb7c216e5d514f74daa9f599cd529dbac4501c71"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/css/editor-style.css","parents":[{"sha":"ed8fdb8cd122f5fe4536325029e1cf65879c684c","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/ed8fdb8cd122f5fe4536325029e1cf65879c684c","html_url":"https://github.com/Dennis174698/myblog/commit/ed8fdb8cd122f5fe4536325029e1cf65879c684c"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/css/ie.css to wp-content/themes/twentysixteen/css/ie.css in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/css/ie.css in GitHub
+API response code 201
+API response body {"content":{"name":"ie.css","path":"wp-content/themes/twentysixteen/css/ie.css","sha":"6e3c24f62425fb6206b10d4a298c2880ae982f8b","size":589,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/css/ie.css?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/css/ie.css","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/6e3c24f62425fb6206b10d4a298c2880ae982f8b","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/css/ie.css","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/css/ie.css?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/6e3c24f62425fb6206b10d4a298c2880ae982f8b","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/css/ie.css"}},"commit":{"sha":"7e6a54d7f929beaf1d6cb081292f906a637eb4b4","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OjdlNmE1NGQ3ZjkyOWJlYWYxZDZjYjA4MTI5MmY5MDZhNjM3ZWI0YjQ=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/7e6a54d7f929beaf1d6cb081292f906a637eb4b4","html_url":"https://github.com/Dennis174698/myblog/commit/7e6a54d7f929beaf1d6cb081292f906a637eb4b4","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:20Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:20Z"},"tree":{"sha":"ea235faff324704818d4437dcf23ec3e4573be71","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/ea235faff324704818d4437dcf23ec3e4573be71"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/css/ie.css","parents":[{"sha":"658fc7cfea1e043a27706a704de4c485756631a7","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/658fc7cfea1e043a27706a704de4c485756631a7","html_url":"https://github.com/Dennis174698/myblog/commit/658fc7cfea1e043a27706a704de4c485756631a7"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/css/ie7.css to wp-content/themes/twentysixteen/css/ie7.css in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/css/ie7.css in GitHub
+API response code 201
+API response body {"content":{"name":"ie7.css","path":"wp-content/themes/twentysixteen/css/ie7.css","sha":"d5b99f1abb1e44fe127b4c173a80d85432549cfd","size":2295,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/css/ie7.css?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/css/ie7.css","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/d5b99f1abb1e44fe127b4c173a80d85432549cfd","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/css/ie7.css","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/css/ie7.css?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/d5b99f1abb1e44fe127b4c173a80d85432549cfd","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/css/ie7.css"}},"commit":{"sha":"96e232cfc5d2b544e835e4b3094688dc4d167298","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0Ojk2ZTIzMmNmYzVkMmI1NDRlODM1ZTRiMzA5NDY4OGRjNGQxNjcyOTg=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/96e232cfc5d2b544e835e4b3094688dc4d167298","html_url":"https://github.com/Dennis174698/myblog/commit/96e232cfc5d2b544e835e4b3094688dc4d167298","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:22Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:22Z"},"tree":{"sha":"520b16ae513b6f3fec0981e15ffcfa001372ec2e","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/520b16ae513b6f3fec0981e15ffcfa001372ec2e"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/css/ie7.css","parents":[{"sha":"7e6a54d7f929beaf1d6cb081292f906a637eb4b4","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/7e6a54d7f929beaf1d6cb081292f906a637eb4b4","html_url":"https://github.com/Dennis174698/myblog/commit/7e6a54d7f929beaf1d6cb081292f906a637eb4b4"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/css/ie8.css to wp-content/themes/twentysixteen/css/ie8.css in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/css/ie8.css in GitHub
+API response code 201
+API response body {"content":{"name":"ie8.css","path":"wp-content/themes/twentysixteen/css/ie8.css","sha":"9719cde571daee9c54d9b2ffbc550416f4e4ff74","size":3151,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/css/ie8.css?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/css/ie8.css","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/9719cde571daee9c54d9b2ffbc550416f4e4ff74","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/css/ie8.css","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/css/ie8.css?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/9719cde571daee9c54d9b2ffbc550416f4e4ff74","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/css/ie8.css"}},"commit":{"sha":"a00587d30944f36982464ac70edf65d77b29ec2c","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OmEwMDU4N2QzMDk0NGYzNjk4MjQ2NGFjNzBlZGY2NWQ3N2IyOWVjMmM=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/a00587d30944f36982464ac70edf65d77b29ec2c","html_url":"https://github.com/Dennis174698/myblog/commit/a00587d30944f36982464ac70edf65d77b29ec2c","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:24Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:24Z"},"tree":{"sha":"b2bbcb4440b256bef665c108c75d823317487fe7","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/b2bbcb4440b256bef665c108c75d823317487fe7"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/css/ie8.css","parents":[{"sha":"96e232cfc5d2b544e835e4b3094688dc4d167298","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/96e232cfc5d2b544e835e4b3094688dc4d167298","html_url":"https://github.com/Dennis174698/myblog/commit/96e232cfc5d2b544e835e4b3094688dc4d167298"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/genericons/Genericons.eot to wp-content/themes/twentysixteen/genericons/Genericons.eot in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/genericons/Genericons.eot in GitHub
+API response code 201
+API response body {"content":{"name":"Genericons.eot","path":"wp-content/themes/twentysixteen/genericons/Genericons.eot","sha":"7322565a01d25b8e3e8a69319593e5d3ccd59689","size":22374,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/genericons/Genericons.eot?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/genericons/Genericons.eot","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/7322565a01d25b8e3e8a69319593e5d3ccd59689","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/genericons/Genericons.eot","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/genericons/Genericons.eot?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/7322565a01d25b8e3e8a69319593e5d3ccd59689","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/genericons/Genericons.eot"}},"commit":{"sha":"601b04696eff4bfc21564b81d32cce82a16afaa5","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OjYwMWIwNDY5NmVmZjRiZmMyMTU2NGI4MWQzMmNjZTgyYTE2YWZhYTU=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/601b04696eff4bfc21564b81d32cce82a16afaa5","html_url":"https://github.com/Dennis174698/myblog/commit/601b04696eff4bfc21564b81d32cce82a16afaa5","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:27Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:27Z"},"tree":{"sha":"b79ab88b26e08a8ce1885f68c11dd3f50a80b9ce","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/b79ab88b26e08a8ce1885f68c11dd3f50a80b9ce"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/genericons/Genericons.eot","parents":[{"sha":"a00587d30944f36982464ac70edf65d77b29ec2c","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/a00587d30944f36982464ac70edf65d77b29ec2c","html_url":"https://github.com/Dennis174698/myblog/commit/a00587d30944f36982464ac70edf65d77b29ec2c"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/genericons/Genericons.svg to wp-content/themes/twentysixteen/genericons/Genericons.svg in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/genericons/Genericons.svg in GitHub
+API response code 201
+API response body {"content":{"name":"Genericons.svg","path":"wp-content/themes/twentysixteen/genericons/Genericons.svg","sha":"47406858fbfc0e025133ae73f10dc421b1fef52f","size":76980,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/genericons/Genericons.svg?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/genericons/Genericons.svg","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/47406858fbfc0e025133ae73f10dc421b1fef52f","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/genericons/Genericons.svg","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/genericons/Genericons.svg?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/47406858fbfc0e025133ae73f10dc421b1fef52f","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/genericons/Genericons.svg"}},"commit":{"sha":"0cf3d2db11f94c0757d438f4f9be6d071d0d70ea","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OjBjZjNkMmRiMTFmOTRjMDc1N2Q0MzhmNGY5YmU2ZDA3MWQwZDcwZWE=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/0cf3d2db11f94c0757d438f4f9be6d071d0d70ea","html_url":"https://github.com/Dennis174698/myblog/commit/0cf3d2db11f94c0757d438f4f9be6d071d0d70ea","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:30Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:30Z"},"tree":{"sha":"0d68cae185b10bd7d8f89703c7e2b9d6a20b48ae","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/0d68cae185b10bd7d8f89703c7e2b9d6a20b48ae"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/genericons/Genericons.svg","parents":[{"sha":"601b04696eff4bfc21564b81d32cce82a16afaa5","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/601b04696eff4bfc21564b81d32cce82a16afaa5","html_url":"https://github.com/Dennis174698/myblog/commit/601b04696eff4bfc21564b81d32cce82a16afaa5"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/genericons/Genericons.ttf to wp-content/themes/twentysixteen/genericons/Genericons.ttf in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/genericons/Genericons.ttf in GitHub
+API response code 201
+API response body {"content":{"name":"Genericons.ttf","path":"wp-content/themes/twentysixteen/genericons/Genericons.ttf","sha":"017443851965255c626a5ad3537d3ed0b7c00f6a","size":22188,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/genericons/Genericons.ttf?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/genericons/Genericons.ttf","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/017443851965255c626a5ad3537d3ed0b7c00f6a","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/genericons/Genericons.ttf","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/genericons/Genericons.ttf?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/017443851965255c626a5ad3537d3ed0b7c00f6a","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/genericons/Genericons.ttf"}},"commit":{"sha":"0b474d7445579499462f1d7ac356a0fd1758833b","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OjBiNDc0ZDc0NDU1Nzk0OTk0NjJmMWQ3YWMzNTZhMGZkMTc1ODgzM2I=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/0b474d7445579499462f1d7ac356a0fd1758833b","html_url":"https://github.com/Dennis174698/myblog/commit/0b474d7445579499462f1d7ac356a0fd1758833b","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:32Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:32Z"},"tree":{"sha":"a2d2b14acf9137e8b6ba7ce09542d3f0cca6b096","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/a2d2b14acf9137e8b6ba7ce09542d3f0cca6b096"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/genericons/Genericons.ttf","parents":[{"sha":"0cf3d2db11f94c0757d438f4f9be6d071d0d70ea","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/0cf3d2db11f94c0757d438f4f9be6d071d0d70ea","html_url":"https://github.com/Dennis174698/myblog/commit/0cf3d2db11f94c0757d438f4f9be6d071d0d70ea"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/genericons/Genericons.woff to wp-content/themes/twentysixteen/genericons/Genericons.woff in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/genericons/Genericons.woff in GitHub
+API response code 201
+API response body {"content":{"name":"Genericons.woff","path":"wp-content/themes/twentysixteen/genericons/Genericons.woff","sha":"0e7212af75273146e900bb3f0dbe2c83b0913e23","size":13988,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/genericons/Genericons.woff?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/genericons/Genericons.woff","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/0e7212af75273146e900bb3f0dbe2c83b0913e23","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/genericons/Genericons.woff","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/genericons/Genericons.woff?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/0e7212af75273146e900bb3f0dbe2c83b0913e23","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/genericons/Genericons.woff"}},"commit":{"sha":"c1ad93b2ed9435707c55cdf11310157a99559a11","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OmMxYWQ5M2IyZWQ5NDM1NzA3YzU1Y2RmMTEzMTAxNTdhOTk1NTlhMTE=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/c1ad93b2ed9435707c55cdf11310157a99559a11","html_url":"https://github.com/Dennis174698/myblog/commit/c1ad93b2ed9435707c55cdf11310157a99559a11","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:35Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:35Z"},"tree":{"sha":"2031bd1924b9ad2099de1e1603508b8c56bb5154","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/2031bd1924b9ad2099de1e1603508b8c56bb5154"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/genericons/Genericons.woff","parents":[{"sha":"0b474d7445579499462f1d7ac356a0fd1758833b","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/0b474d7445579499462f1d7ac356a0fd1758833b","html_url":"https://github.com/Dennis174698/myblog/commit/0b474d7445579499462f1d7ac356a0fd1758833b"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/genericons/genericons.css to wp-content/themes/twentysixteen/genericons/genericons.css in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/genericons/genericons.css in GitHub
+API response code 201
+API response body {"content":{"name":"genericons.css","path":"wp-content/themes/twentysixteen/genericons/genericons.css","sha":"7935d4e11c7072243fdce403307483144338aac9","size":27107,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/genericons/genericons.css?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/genericons/genericons.css","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/7935d4e11c7072243fdce403307483144338aac9","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/genericons/genericons.css","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/genericons/genericons.css?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/7935d4e11c7072243fdce403307483144338aac9","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/genericons/genericons.css"}},"commit":{"sha":"c170076697c2db35d2d70da7c2521d4c52e21a17","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OmMxNzAwNzY2OTdjMmRiMzVkMmQ3MGRhN2MyNTIxZDRjNTJlMjFhMTc=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/c170076697c2db35d2d70da7c2521d4c52e21a17","html_url":"https://github.com/Dennis174698/myblog/commit/c170076697c2db35d2d70da7c2521d4c52e21a17","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:38Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:38Z"},"tree":{"sha":"060ab4dcdbe0983ba5b5cd834c11b4521c96be59","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/060ab4dcdbe0983ba5b5cd834c11b4521c96be59"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/genericons/genericons.css","parents":[{"sha":"c1ad93b2ed9435707c55cdf11310157a99559a11","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/c1ad93b2ed9435707c55cdf11310157a99559a11","html_url":"https://github.com/Dennis174698/myblog/commit/c1ad93b2ed9435707c55cdf11310157a99559a11"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/js/color-scheme-control.js to wp-content/themes/twentysixteen/js/color-scheme-control.js in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/js/color-scheme-control.js in GitHub
+API response code 201
+API response body {"content":{"name":"color-scheme-control.js","path":"wp-content/themes/twentysixteen/js/color-scheme-control.js","sha":"e65b5bdea603b3e1f6adcde7df5208662115593f","size":2951,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/js/color-scheme-control.js?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/js/color-scheme-control.js","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/e65b5bdea603b3e1f6adcde7df5208662115593f","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/js/color-scheme-control.js","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/js/color-scheme-control.js?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/e65b5bdea603b3e1f6adcde7df5208662115593f","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/js/color-scheme-control.js"}},"commit":{"sha":"c5f996bcd342d600c2c6d7808c7a2bc54816bfb7","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OmM1Zjk5NmJjZDM0MmQ2MDBjMmM2ZDc4MDhjN2EyYmM1NDgxNmJmYjc=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/c5f996bcd342d600c2c6d7808c7a2bc54816bfb7","html_url":"https://github.com/Dennis174698/myblog/commit/c5f996bcd342d600c2c6d7808c7a2bc54816bfb7","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:40Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:40Z"},"tree":{"sha":"95f464daf3b669c3f9449fc0ad1b16e2fd5b8567","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/95f464daf3b669c3f9449fc0ad1b16e2fd5b8567"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/js/color-scheme-control.js","parents":[{"sha":"c170076697c2db35d2d70da7c2521d4c52e21a17","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/c170076697c2db35d2d70da7c2521d4c52e21a17","html_url":"https://github.com/Dennis174698/myblog/commit/c170076697c2db35d2d70da7c2521d4c52e21a17"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/js/customize-preview.js to wp-content/themes/twentysixteen/js/customize-preview.js in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/js/customize-preview.js in GitHub
+API response code 201
+API response body {"content":{"name":"customize-preview.js","path":"wp-content/themes/twentysixteen/js/customize-preview.js","sha":"fc99333c2914764db30bdd187aee9b5c730f5b89","size":1061,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/js/customize-preview.js?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/js/customize-preview.js","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/fc99333c2914764db30bdd187aee9b5c730f5b89","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/js/customize-preview.js","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/js/customize-preview.js?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/fc99333c2914764db30bdd187aee9b5c730f5b89","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/js/customize-preview.js"}},"commit":{"sha":"b5df89d0c5d52c468d88625c403da81e4b7ac529","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OmI1ZGY4OWQwYzVkNTJjNDY4ZDg4NjI1YzQwM2RhODFlNGI3YWM1Mjk=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/b5df89d0c5d52c468d88625c403da81e4b7ac529","html_url":"https://github.com/Dennis174698/myblog/commit/b5df89d0c5d52c468d88625c403da81e4b7ac529","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:42Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:42Z"},"tree":{"sha":"278a3489ee25b1f9a4da7b9551c4284ca4ac8f4e","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/278a3489ee25b1f9a4da7b9551c4284ca4ac8f4e"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/js/customize-preview.js","parents":[{"sha":"c5f996bcd342d600c2c6d7808c7a2bc54816bfb7","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/c5f996bcd342d600c2c6d7808c7a2bc54816bfb7","html_url":"https://github.com/Dennis174698/myblog/commit/c5f996bcd342d600c2c6d7808c7a2bc54816bfb7"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/js/functions.js to wp-content/themes/twentysixteen/js/functions.js in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/js/functions.js in GitHub
+API response code 201
+API response body {"content":{"name":"functions.js","path":"wp-content/themes/twentysixteen/js/functions.js","sha":"a15af117cbba432d155d9bb58d8e21fbadceb811","size":7341,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/js/functions.js?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/js/functions.js","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/a15af117cbba432d155d9bb58d8e21fbadceb811","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/js/functions.js","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/js/functions.js?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/a15af117cbba432d155d9bb58d8e21fbadceb811","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/js/functions.js"}},"commit":{"sha":"6784cd362a8cb0489879f19beedbde484d3f033e","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OjY3ODRjZDM2MmE4Y2IwNDg5ODc5ZjE5YmVlZGJkZTQ4NGQzZjAzM2U=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/6784cd362a8cb0489879f19beedbde484d3f033e","html_url":"https://github.com/Dennis174698/myblog/commit/6784cd362a8cb0489879f19beedbde484d3f033e","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:44Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:44Z"},"tree":{"sha":"94c9b2591af5a0c7e45bbcd06766631835f80895","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/94c9b2591af5a0c7e45bbcd06766631835f80895"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/js/functions.js","parents":[{"sha":"b5df89d0c5d52c468d88625c403da81e4b7ac529","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/b5df89d0c5d52c468d88625c403da81e4b7ac529","html_url":"https://github.com/Dennis174698/myblog/commit/b5df89d0c5d52c468d88625c403da81e4b7ac529"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/js/html5.js to wp-content/themes/twentysixteen/js/html5.js in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/js/html5.js in GitHub
+API response code 201
+API response body {"content":{"name":"html5.js","path":"wp-content/themes/twentysixteen/js/html5.js","sha":"9c1f049556e955951420c9b587b78b3dbb2ede37","size":10330,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/js/html5.js?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/js/html5.js","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/9c1f049556e955951420c9b587b78b3dbb2ede37","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/js/html5.js","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/js/html5.js?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/9c1f049556e955951420c9b587b78b3dbb2ede37","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/js/html5.js"}},"commit":{"sha":"782f9abba685d303ad7829590f820946a11c337d","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0Ojc4MmY5YWJiYTY4NWQzMDNhZDc4Mjk1OTBmODIwOTQ2YTExYzMzN2Q=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/782f9abba685d303ad7829590f820946a11c337d","html_url":"https://github.com/Dennis174698/myblog/commit/782f9abba685d303ad7829590f820946a11c337d","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:47Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:47Z"},"tree":{"sha":"edba0f372dab0ed7d309bbfe5a78b59e052436f5","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/edba0f372dab0ed7d309bbfe5a78b59e052436f5"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/js/html5.js","parents":[{"sha":"6784cd362a8cb0489879f19beedbde484d3f033e","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/6784cd362a8cb0489879f19beedbde484d3f033e","html_url":"https://github.com/Dennis174698/myblog/commit/6784cd362a8cb0489879f19beedbde484d3f033e"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/js/keyboard-image-navigation.js to wp-content/themes/twentysixteen/js/keyboard-image-navigation.js in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/js/keyboard-image-navigation.js in GitHub
+API response code 201
+API response body {"content":{"name":"keyboard-image-navigation.js","path":"wp-content/themes/twentysixteen/js/keyboard-image-navigation.js","sha":"b10927c3be21ec6e4b08d168098e1e9f35fb33e2","size":527,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/js/keyboard-image-navigation.js?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/js/keyboard-image-navigation.js","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/b10927c3be21ec6e4b08d168098e1e9f35fb33e2","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/js/keyboard-image-navigation.js","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/js/keyboard-image-navigation.js?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/b10927c3be21ec6e4b08d168098e1e9f35fb33e2","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/js/keyboard-image-navigation.js"}},"commit":{"sha":"2def6d5d6fd28e90b60c8d4f547e1826d3280f6a","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OjJkZWY2ZDVkNmZkMjhlOTBiNjBjOGQ0ZjU0N2UxODI2ZDMyODBmNmE=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/2def6d5d6fd28e90b60c8d4f547e1826d3280f6a","html_url":"https://github.com/Dennis174698/myblog/commit/2def6d5d6fd28e90b60c8d4f547e1826d3280f6a","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:49Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:49Z"},"tree":{"sha":"4f056888bb4f07a5021a99058d54ce12a8dacadd","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/4f056888bb4f07a5021a99058d54ce12a8dacadd"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/js/keyboard-image-navigation.js","parents":[{"sha":"782f9abba685d303ad7829590f820946a11c337d","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/782f9abba685d303ad7829590f820946a11c337d","html_url":"https://github.com/Dennis174698/myblog/commit/782f9abba685d303ad7829590f820946a11c337d"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/js/skip-link-focus-fix.js to wp-content/themes/twentysixteen/js/skip-link-focus-fix.js in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/js/skip-link-focus-fix.js in GitHub
+API response code 201
+API response body {"content":{"name":"skip-link-focus-fix.js","path":"wp-content/themes/twentysixteen/js/skip-link-focus-fix.js","sha":"ae8a5da10ae0908c325aff94dd0e30a73877c9f7","size":1059,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/js/skip-link-focus-fix.js?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/js/skip-link-focus-fix.js","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/ae8a5da10ae0908c325aff94dd0e30a73877c9f7","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/js/skip-link-focus-fix.js","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/js/skip-link-focus-fix.js?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/ae8a5da10ae0908c325aff94dd0e30a73877c9f7","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/js/skip-link-focus-fix.js"}},"commit":{"sha":"68e96eff9604d9a7ec162f446f4b8588a6186fb2","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OjY4ZTk2ZWZmOTYwNGQ5YTdlYzE2MmY0NDZmNGI4NTg4YTYxODZmYjI=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/68e96eff9604d9a7ec162f446f4b8588a6186fb2","html_url":"https://github.com/Dennis174698/myblog/commit/68e96eff9604d9a7ec162f446f4b8588a6186fb2","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:51Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:51Z"},"tree":{"sha":"d88314f2b74b5ec6ce3b2904e261338503385b0c","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/d88314f2b74b5ec6ce3b2904e261338503385b0c"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/js/skip-link-focus-fix.js","parents":[{"sha":"2def6d5d6fd28e90b60c8d4f547e1826d3280f6a","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/2def6d5d6fd28e90b60c8d4f547e1826d3280f6a","html_url":"https://github.com/Dennis174698/myblog/commit/2def6d5d6fd28e90b60c8d4f547e1826d3280f6a"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/rtl.css to wp-content/themes/twentysixteen/rtl.css in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/rtl.css in GitHub
+API response code 201
+API response body {"content":{"name":"rtl.css","path":"wp-content/themes/twentysixteen/rtl.css","sha":"e264b61664ed52caf030d274beb7674714f0a220","size":10942,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/rtl.css?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/rtl.css","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/e264b61664ed52caf030d274beb7674714f0a220","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/rtl.css","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/rtl.css?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/e264b61664ed52caf030d274beb7674714f0a220","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/rtl.css"}},"commit":{"sha":"2d49a54cff5e38c0f1ffa6d4082f912fd0dbabea","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OjJkNDlhNTRjZmY1ZTM4YzBmMWZmYTZkNDA4MmY5MTJmZDBkYmFiZWE=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/2d49a54cff5e38c0f1ffa6d4082f912fd0dbabea","html_url":"https://github.com/Dennis174698/myblog/commit/2d49a54cff5e38c0f1ffa6d4082f912fd0dbabea","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:53Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:53Z"},"tree":{"sha":"ae121784f411dd64df867e0c5dfeb109283f4353","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/ae121784f411dd64df867e0c5dfeb109283f4353"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/rtl.css","parents":[{"sha":"68e96eff9604d9a7ec162f446f4b8588a6186fb2","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/68e96eff9604d9a7ec162f446f4b8588a6186fb2","html_url":"https://github.com/Dennis174698/myblog/commit/68e96eff9604d9a7ec162f446f4b8588a6186fb2"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/screenshot.png to wp-content/themes/twentysixteen/screenshot.png in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/screenshot.png in GitHub
+API response code 201
+API response body {"content":{"name":"screenshot.png","path":"wp-content/themes/twentysixteen/screenshot.png","sha":"e4f2b25df4f3dba97ed97a358ee7b50330e828f0","size":463555,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/screenshot.png?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/screenshot.png","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/e4f2b25df4f3dba97ed97a358ee7b50330e828f0","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/screenshot.png","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/screenshot.png?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/e4f2b25df4f3dba97ed97a358ee7b50330e828f0","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/screenshot.png"}},"commit":{"sha":"47dd84386b3cbcd7c76c2da2c525943a70e49e57","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OjQ3ZGQ4NDM4NmIzY2JjZDdjNzZjMmRhMmM1MjU5NDNhNzBlNDllNTc=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/47dd84386b3cbcd7c76c2da2c525943a70e49e57","html_url":"https://github.com/Dennis174698/myblog/commit/47dd84386b3cbcd7c76c2da2c525943a70e49e57","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:57Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:57:57Z"},"tree":{"sha":"7ebb53c9d6fc5817c4b36341b9143a5c7401a25d","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/7ebb53c9d6fc5817c4b36341b9143a5c7401a25d"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/screenshot.png","parents":[{"sha":"2d49a54cff5e38c0f1ffa6d4082f912fd0dbabea","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/2d49a54cff5e38c0f1ffa6d4082f912fd0dbabea","html_url":"https://github.com/Dennis174698/myblog/commit/2d49a54cff5e38c0f1ffa6d4082f912fd0dbabea"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-content/themes/twentysixteen/style.css to wp-content/themes/twentysixteen/style.css in GitHub
+API response code 200
+API response body {"data":{"repository":{"object":null}}}
+Creating wp-content/themes/twentysixteen/style.css in GitHub
+API response code 201
+API response body {"content":{"name":"style.css","path":"wp-content/themes/twentysixteen/style.css","sha":"02323c99d521e8c84d6e625b96a1761e14455ffa","size":60431,"url":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/style.css?ref=gh-pages","html_url":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/style.css","git_url":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/02323c99d521e8c84d6e625b96a1761e14455ffa","download_url":"https://raw.githubusercontent.com/Dennis174698/myblog/gh-pages/wp-content/themes/twentysixteen/style.css","type":"file","_links":{"self":"https://api.github.com/repos/Dennis174698/myblog/contents/wp-content/themes/twentysixteen/style.css?ref=gh-pages","git":"https://api.github.com/repos/Dennis174698/myblog/git/blobs/02323c99d521e8c84d6e625b96a1761e14455ffa","html":"https://github.com/Dennis174698/myblog/blob/gh-pages/wp-content/themes/twentysixteen/style.css"}},"commit":{"sha":"51ce23481c1a9aa253e10156bb8ec331d5f0932f","node_id":"MDY6Q29tbWl0MjIwOTMxMDk0OjUxY2UyMzQ4MWMxYTlhYTI1M2UxMDE1NmJiOGVjMzMxZDVmMDkzMmY=","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/51ce23481c1a9aa253e10156bb8ec331d5f0932f","html_url":"https://github.com/Dennis174698/myblog/commit/51ce23481c1a9aa253e10156bb8ec331d5f0932f","author":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:58:01Z"},"committer":{"name":"Dennis174698","email":"32445088+Dennis174698@users.noreply.github.com","date":"2019-11-11T11:58:01Z"},"tree":{"sha":"98aa07cbd5e9c41d0789f24c53c0c8bdb2e7b8dc","url":"https://api.github.com/repos/Dennis174698/myblog/git/trees/98aa07cbd5e9c41d0789f24c53c0c8bdb2e7b8dc"},"message":"WP2Static CREATE wp-content/themes/twentysixteen/style.css","parents":[{"sha":"47dd84386b3cbcd7c76c2da2c525943a70e49e57","url":"https://api.github.com/repos/Dennis174698/myblog/git/commits/47dd84386b3cbcd7c76c2da2c525943a70e49e57","html_url":"https://github.com/Dennis174698/myblog/commit/47dd84386b3cbcd7c76c2da2c525943a70e49e57"}],"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}}}
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-includes/css/dist/block-library/style.min.css to wp-includes/css/dist/block-library/style.min.css in GitHub
+Skipping wp-includes/css/dist/block-library/style.min.css as identical to deploy cache
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-includes/css/dist/block-library/theme.min.css to wp-includes/css/dist/block-library/theme.min.css in GitHub
+Skipping wp-includes/css/dist/block-library/theme.min.css as identical to deploy cache
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-includes/js/jquery/jquery-migrate.min.js to wp-includes/js/jquery/jquery-migrate.min.js in GitHub
+Skipping wp-includes/js/jquery/jquery-migrate.min.js as identical to deploy cache
+Uploading /var/www/html/wordpress/wp-content/uploads/wp-static-html-output-1573473408/wp-includes/js/jquery/jquery.js to wp-includes/js/jquery/jquery.js in GitHub
+Skipping wp-includes/js/jquery/jquery.js as identical to deploy cache
