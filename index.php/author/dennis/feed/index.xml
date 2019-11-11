@@ -11,27 +11,39 @@
 	<title>dennis &#8211; Dennis_Chen</title>
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../../../../index.html</link>
-	<description>又一个WordPress站点</description>
-	<lastBuildDate>Mon, 11 Nov 2019 10:51:58 +0000</lastBuildDate>
-	<language>zh-CN</language>
+	<description>杂技程序员</description>
+	<lastBuildDate>Mon, 11 Nov 2019 16:32:42 +0000</lastBuildDate>
+	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.2.4</generator>
 	<item>
-		<title>世界，您好！</title>
+		<title>yoyo</title>
+		<link>./../../../2019/11/11/yoyo/index.html</link>
+				<comments>./../../../2019/11/11/yoyo/index.html#respond</comments>
+				<pubDate>Mon, 11 Nov 2019 16:32:42 +0000</pubDate>
+		<dc:creator><![CDATA[dennis]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">./../../../../index.html?p=37</guid>
+				<description><![CDATA[]]></description>
+								<content:encoded><![CDATA[]]></content:encoded>
+							<wfw:commentRss>./../../../2019/11/11/yoyo/feed/index.html</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Hello world!</title>
 		<link>./../../../2019/11/11/hello-world/index.html</link>
 				<comments>./../../../2019/11/11/hello-world/index.html#comments</comments>
-				<pubDate>Mon, 11 Nov 2019 10:51:58 +0000</pubDate>
+				<pubDate>Mon, 11 Nov 2019 16:13:12 +0000</pubDate>
 		<dc:creator><![CDATA[dennis]]></dc:creator>
-				<category><![CDATA[未分类]]></category>
+				<category><![CDATA[Uncategorized]]></category>
 
 		<guid isPermaLink="false">./../../../../index.html?p=1</guid>
-				<description><![CDATA[欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！]]></description>
-								<content:encoded><![CDATA[
-<p>欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！</p>
-]]></content:encoded>
+				<description><![CDATA[]]></description>
+								<content:encoded><![CDATA[]]></content:encoded>
 							<wfw:commentRss>./../../../2019/11/11/hello-world/feed/index.html</wfw:commentRss>
 		<slash:comments>1</slash:comments>
 							</item>
