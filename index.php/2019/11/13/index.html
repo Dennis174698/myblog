@@ -6,7 +6,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-<title>October 20, 2018 &#8211; Dennis_Chen</title>
+<title>November 13, 2019 &#8211; Dennis_Chen</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
@@ -129,108 +129,22 @@ max-width: 100%;
 <div class="wrap">
 
 			<header class="page-header">
-			<h1 class="page-title">Day: October 20, 2018</h1>		</header><!-- .page-header -->
+			<h1 class="page-title">Day: November 13, 2019</h1>		</header><!-- .page-header -->
 	
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 					
-<article id="post-47" class="post-47 post type-post status-publish format-standard hentry category-uncategorized">
+<article id="post-90" class="post-90 post type-post status-publish format-standard hentry category-uncategorized">
 		<header class="entry-header">
-		<div class="entry-meta"><span class="screen-reader-text">Posted on</span> <a href="./applying-ant-colony-optimisation-to-the-travelling-salesman-problem/index.html" rel="bookmark"><time class="entry-date published" datetime="2018-10-20T10:48:08+00:00">October 20, 2018</time><time class="updated" datetime="2019-11-13T07:53:36+00:00">November 13, 2019</time></a></div><!-- .entry-meta --><h2 class="entry-title"><a href="./applying-ant-colony-optimisation-to-the-travelling-salesman-problem/index.html" rel="bookmark">蚁群算法在旅行商问题的应用</a></h2>	</header><!-- .entry-header -->
+		<div class="entry-meta"><span class="screen-reader-text">Posted on</span> <a href="./arduino/index.html" rel="bookmark"><time class="entry-date published" datetime="2019-11-13T12:48:40+00:00">November 13, 2019</time><time class="updated" datetime="2019-11-13T13:30:53+00:00">November 13, 2019</time></a></div><!-- .entry-meta --><h2 class="entry-title"><a href="./arduino/index.html" rel="bookmark">使用Ardunio nano 开发自动小船</a></h2>	</header><!-- .entry-header -->
 
 	
 	<div class="entry-content">
-		
-<h1>Applying Ant Colony Optimisation to the Travelling Salesman Problem</h1>
-
-
-
-<h2>problem description</h2>
-
-
-
-<p>旅行推销员问题：如果旅行推销员希望精确访问一次m个城市列表中的每个城市（其中，从城市i到城市j的旅行成本为cij），然后返回到本国城市，可能的最短路径是多少。</p>
-
-
-
-<h2>Algorithm</h2>
-
-
-
-<figure class="wp-block-image"><img src="https://github.com/Dennis174698/TSP/raw/master/aco.png" alt=""/></figure>
-
-
-
-<p style="font-size:27px">Ant Colony Optimization</p>
-
-
-
-<p>ACO算法基于蚂蚁的行为，尝试寻找两点之间的最佳路径。</p>
-
-
-
-<p>这是通过发送大量蚂蚁波来遍历图形来实现的。第一波蚂蚁随机地或基于一种简单的启发式方法（例如从任何节点走最短路径）遍历该图。</p>
-
-
-
-<p>然后，信息素会沿着成功的路径分布，那些通过评分函数确定为相对较好的路径将接收更多量的信息素。然后，将进一步的蚂蚁发送出去遍历图，同时考虑信息素的水平和启发式，然后再次将信息素放置在与路径得分成比例的路径上。</p>
-
-
-
-<p>这样，最优化的路径将累积最多量的信息素，并且更有可能被后代的蚂蚁选择。</p>
-
-
-
-<p><br></p>
-
-
-
-<h2>Implementation</h2>
-
-
-
-<figure class="wp-block-image"><img src="https://github.com/Dennis174698/TSP/raw/master/workflow1.png" alt=""/></figure>
-
-
-
-<p> <br>   迭代阶段涉及迭代一定数量的世代，并在每次迭代中执行以下操作： <br></p>
-
-
-
-<ol><li>为每个蚂蚁生成一条路线。该路线由以下步骤生成：<br><br> <strong>a. </strong>随机选择一个起点<br><br> <strong>b. </strong>根据信息素图和启发式因素的组合选择下一个要访问的位置。具体来说，使用以下公式为每个未访问的位置评分： <br> <code>𝑠𝑐𝑜𝑟𝑒 = 𝑝ℎ𝑒𝑟𝑜𝑚𝑜𝑛𝑒𝛼**α ∗ ℎ𝑒𝑢𝑟𝑖𝑠𝑡𝑖𝑐**β</code> 同时:  <code>𝑝ℎ𝑒𝑟𝑜𝑚𝑜𝑛𝑒</code> = 从当前位置到未访问位置的路径上的信息素数量。<br><br> <code>α</code> = 信息素权重影响的比例因子。 <br><br> <code>ℎ𝑒𝑢𝑟𝑖𝑠𝑡𝑖𝑐</code> = 从当前位置到未访问位置的启发式值（在此解决方案中为1 /距离）。<br><br> <code>β</code> = 启发值权重影响的比例因子.<br><br> c. 将下一个位置添加到路线并将其从未访问位置列表中删除。<br></li><li>根据行进的总距离对路线进行评分。       <code>(cost= fun.decodingFun(RouteData,popsize,dmat,N))</code><br></li><li>当找到更好的路线，将bestsolution更新<br></li><li>将分数标准化到 [100, 200]。<br></li><li>生成信息素图，以沿着蚂蚁的路线分布。该值由路径上每条路径的信息素<code>𝑞 / 𝑠𝑐𝑎𝑙𝑒𝑑 𝑠𝑐𝑜𝑟𝑒</code>决定，其中q是某个比例因子<br></li><li>衰减现有信息素并使用以下公式添加所需的新信息素：<br><code>𝑝ℎ𝑒𝑟𝑜𝑚𝑜𝑛𝑒 = 𝑐𝑢𝑟𝑟𝑒𝑛𝑡𝑃ℎ𝑒𝑟𝑜𝑚𝑜𝑛𝑒 ∗ (1 − ⍴) + 𝑛𝑒𝑤𝑃ℎ𝑒𝑟𝑜𝑚𝑜𝑛𝑒(Tau=Tau*(1-rho)+detaTau)</code><br><code>𝑝ℎ𝑒𝑟𝑜𝑚𝑜𝑛𝑒</code> = 更新后的信息素值<br><code>𝑐𝑢𝑟𝑟𝑒𝑛𝑡𝑃ℎ𝑒𝑟𝑜𝑚𝑜𝑛𝑒</code> = 在这条路线上现有的信息素值<br><code>⍴ </code>=信息素衰减因子.<br><code>𝑛𝑒𝑤𝑃ℎ𝑒𝑟𝑜𝑚𝑜𝑛𝑒</code> = 根据路线分数添加的信息素.<br></li></ol>
-
-
-
-<p>所有迭代完成后， 将会得到：</p>
-
-
-
-<ol><li>最优路线</li><li>每次迭代的最优分数</li><li>在每次迭代中所有路线分数的总和</li></ol>
-
-
-
-<p style="font-size:29px">Sample Result:</p>
-
-
-
-<p>预设值</p>
-
-
-
-<p>MaxGen=100 #Iteration<br> popsize=20 #population of ants<br> alpha=4    #α<br> beta=1     #β<br> rho=0.5    #ρ<br> Q=5        #q</p>
-
-
-
-<ul class="wp-block-gallery columns-2 is-cropped"><li class="blocks-gallery-item"><figure><img src="./../../../../wp-content/uploads/2019/11/1.png" alt="" data-id="54" data-link="./index.php/2018/10/20/%e8%9a%81%e7%be%a4%e7%ae%97%e6%b3%95%e5%9c%a8%e6%97%85%e8%a1%8c%e5%95%86%e9%97%ae%e9%a2%98%e7%9a%84%e5%ba%94%e7%94%a8/attachment/1/" class="wp-image-54" srcset="./../../../../wp-content/uploads/2019/11/1.png 432w, ./../../../../wp-content/uploads/2019/11/1-300x200.png 300w" sizes="(max-width: 432px) 100vw, 432px" /></figure></li><li class="blocks-gallery-item"><figure><img src="./../../../../wp-content/uploads/2019/11/2.png" alt="" data-id="55" data-link="./index.php/2018/10/20/%e8%9a%81%e7%be%a4%e7%ae%97%e6%b3%95%e5%9c%a8%e6%97%85%e8%a1%8c%e5%95%86%e9%97%ae%e9%a2%98%e7%9a%84%e5%ba%94%e7%94%a8/attachment/2/" class="wp-image-55" srcset="./../../../../wp-content/uploads/2019/11/2.png 432w, ./../../../../wp-content/uploads/2019/11/2-300x200.png 300w" sizes="(max-width: 432px) 100vw, 432px" /></figure></li></ul>
-
-
-
-<p>项目地址：<a href="https://github.com/Dennis174698/TSP">https://github.com/Dennis174698/TSP</a></p>
-	</div><!-- .entry-content -->
+			</div><!-- .entry-content -->
 
 	
-</article><!-- #post-47 -->
+</article><!-- #post-90 -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
@@ -238,20 +152,20 @@ max-width: 100%;
 <aside id="secondary" class="widget-area" role="complementary" aria-label="Blog Sidebar">
 			<section id="recent-posts-4" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
-					<a href="./../../../2019/11/13/arduino/index.html">使用Ardunio nano 开发自动小船</a>
+					<a href="./arduino/index.html">使用Ardunio nano 开发自动小船</a>
 									</li>
 											<li>
-					<a href="./../../../2019/11/12/yoyo/index.html">yoyo</a>
+					<a href="./../12/yoyo/index.html">yoyo</a>
 									</li>
 											<li>
-					<a href="./../../../2019/10/24/mpi/index.html">使用Dijkstra算法，MPI并行编程解决全源最短路径问题（All-Pairs Shortest Paths Problem)</a>
+					<a href="./../../10/24/mpi/index.html">使用Dijkstra算法，MPI并行编程解决全源最短路径问题（All-Pairs Shortest Paths Problem)</a>
 									</li>
 											<li>
-					<a href="./applying-ant-colony-optimisation-to-the-travelling-salesman-problem/index.html">蚁群算法在旅行商问题的应用</a>
+					<a href="./../../../2018/10/20/applying-ant-colony-optimisation-to-the-travelling-salesman-problem/index.html">蚁群算法在旅行商问题的应用</a>
 									</li>
 					</ul>
 		</section><section id="calendar-3" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
-	<caption>October 2018</caption>
+	<caption>November 2019</caption>
 	<thead>
 	<tr>
 		<th scope="col" title="Monday">M</th>
@@ -266,27 +180,28 @@ max-width: 100%;
 
 	<tfoot>
 	<tr>
-		<td colspan="3" id="prev" class="pad">&nbsp;</td>
+		<td colspan="3" id="prev"><a href="./../../10/index.html">&laquo; Oct</a></td>
 		<td class="pad">&nbsp;</td>
-		<td colspan="3" id="next"><a href="./../../../2019/10/index.html">Oct &raquo;</a></td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
 	</tr>
 	</tfoot>
 
 	<tbody>
-	<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+	<tr>
+		<td colspan="4" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td>
 	</tr>
 	<tr>
-		<td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+		<td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
 	</tr>
 	<tr>
-		<td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td><a href="./index.html" aria-label="Posts published on October 20, 2018">20</a></td><td>21</td>
+		<td>11</td><td><a href="./../12/index.html" aria-label="Posts published on November 12, 2019">12</a></td><td id="today"><a href="./index.html" aria-label="Posts published on November 13, 2019">13</a></td><td>14</td><td>15</td><td>16</td><td>17</td>
 	</tr>
 	<tr>
-		<td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+		<td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
 	</tr>
 	<tr>
-		<td>29</td><td>30</td><td>31</td>
-		<td class="pad" colspan="4">&nbsp;</td>
+		<td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+		<td class="pad" colspan="1">&nbsp;</td>
 	</tr>
 	</tbody>
 	</table></div></section><section id="search-3" class="widget widget_search"><h2 class="widget-title">Search</h2>

@@ -7,11 +7,11 @@
 	>
 <channel>
 	<title>
-	Comments on: 蚁群算法在旅行商问题的应用	</title>
+	Comments on: 使用Dijkstra算法，MPI并行编程解决全源最短路径问题（All-Pairs Shortest Paths Problem)	</title>
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../index.html</link>
 	<description>杂技程序员</description>
-	<lastBuildDate>Wed, 13 Nov 2019 07:53:36 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 13 Nov 2019 11:01:59 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>

@@ -6,13 +6,13 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-<title>Applying Ant Colony Optimisation to the Travelling Salesman Problem &#8211; Dennis_Chen</title>
+<title>蚁群算法在旅行商问题的应用 &#8211; Dennis_Chen</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
 <link rel="alternate" type="application/rss+xml" title="Dennis_Chen &raquo; Feed" href="./../../../../feed/index.html" />
 <link rel="alternate" type="application/rss+xml" title="Dennis_Chen &raquo; Comments Feed" href="./../../../../comments/feed/index.html" />
-<link rel="alternate" type="application/rss+xml" title="Dennis_Chen &raquo; Applying Ant Colony Optimisation to the Travelling Salesman Problem Comments Feed" href="./feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Dennis_Chen &raquo; 蚁群算法在旅行商问题的应用 Comments Feed" href="./feed/index.html" />
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.4"}};
 			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -47,7 +47,7 @@ img.emoji {
 <link rel='https://api.w.org/' href='./../../../../wp-json/index.html' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../../../../../xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../../../../../wp-includes/wlwmanifest.xml" /> 
-<link rel='next' title='yoyo' href='./../../../../2019/11/12/yoyo/index.html' />
+<link rel='next' title='使用Dijkstra算法，MPI并行编程解决全源最短路径问题（All-Pairs Shortest Paths Problem)' href='./../../../../2019/10/24/mpi/index.html' />
 <meta name="generator" content="WordPress 5.2.4" />
 <link rel="canonical" href="./index.html" />
 <link rel='shortlink' href='./../../../../../index.html?p=47' />
@@ -140,12 +140,12 @@ max-width: 100%;
 			
 <article id="post-47" class="post-47 post type-post status-publish format-standard hentry category-uncategorized">
 		<header class="entry-header">
-		<div class="entry-meta"><span class="posted-on"><span class="screen-reader-text">Posted on</span> <a href="./index.html" rel="bookmark"><time class="entry-date published" datetime="2018-10-20T10:48:08+00:00">October 20, 2018</time><time class="updated" datetime="2019-11-12T12:01:03+00:00">November 12, 2019</time></a></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="./../../../../author/dennis/index.html">dennis</a></span></span></div><!-- .entry-meta --><h1 class="entry-title">Applying Ant Colony Optimisation to the Travelling Salesman Problem</h1>	</header><!-- .entry-header -->
+		<div class="entry-meta"><span class="posted-on"><span class="screen-reader-text">Posted on</span> <a href="./index.html" rel="bookmark"><time class="entry-date published" datetime="2018-10-20T10:48:08+00:00">October 20, 2018</time><time class="updated" datetime="2019-11-13T07:53:36+00:00">November 13, 2019</time></a></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="./../../../../author/dennis/index.html">dennis</a></span></span></div><!-- .entry-meta --><h1 class="entry-title">蚁群算法在旅行商问题的应用</h1>	</header><!-- .entry-header -->
 
 	
 	<div class="entry-content">
 		
-<h1>蚁群算法在旅行商问题的应用</h1>
+<h1>Applying Ant Colony Optimisation to the Travelling Salesman Problem</h1>
 
 
 
@@ -252,7 +252,7 @@ max-width: 100%;
 
 	<nav class="navigation post-navigation" role="navigation">
 		<h2 class="screen-reader-text">Post navigation</h2>
-		<div class="nav-links"><div class="nav-next"><a href="./../../../../2019/11/12/yoyo/index.html" rel="next"><span class="screen-reader-text">Next Post</span><span aria-hidden="true" class="nav-subtitle">Next</span> <span class="nav-title">yoyo<span class="nav-title-icon-wrapper"><svg class="icon icon-arrow-right" aria-hidden="true" role="img"> <use href="#icon-arrow-right" xlink:href="#icon-arrow-right"></use> </svg></span></span></a></div></div>
+		<div class="nav-links"><div class="nav-next"><a href="./../../../../2019/10/24/mpi/index.html" rel="next"><span class="screen-reader-text">Next Post</span><span aria-hidden="true" class="nav-subtitle">Next</span> <span class="nav-title">使用Dijkstra算法，MPI并行编程解决全源最短路径问题（All-Pairs Shortest Paths Problem)<span class="nav-title-icon-wrapper"><svg class="icon icon-arrow-right" aria-hidden="true" role="img"> <use href="#icon-arrow-right" xlink:href="#icon-arrow-right"></use> </svg></span></span></a></div></div>
 	</nav>
 		</main><!-- #main -->
 	</div><!-- #primary -->
@@ -260,10 +260,16 @@ max-width: 100%;
 <aside id="secondary" class="widget-area" role="complementary" aria-label="Blog Sidebar">
 			<section id="recent-posts-4" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
+					<a href="./../../../../2019/11/13/arduino/index.html">使用Ardunio nano 开发自动小船</a>
+									</li>
+											<li>
 					<a href="./../../../../2019/11/12/yoyo/index.html">yoyo</a>
 									</li>
 											<li>
-					<a href="./index.html">Applying Ant Colony Optimisation to the Travelling Salesman Problem</a>
+					<a href="./../../../../2019/10/24/mpi/index.html">使用Dijkstra算法，MPI并行编程解决全源最短路径问题（All-Pairs Shortest Paths Problem)</a>
+									</li>
+											<li>
+					<a href="./index.html">蚁群算法在旅行商问题的应用</a>
 									</li>
 					</ul>
 		</section><section id="calendar-3" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
@@ -284,7 +290,7 @@ max-width: 100%;
 	<tr>
 		<td colspan="3" id="prev" class="pad">&nbsp;</td>
 		<td class="pad">&nbsp;</td>
-		<td colspan="3" id="next"><a href="./../../../../2019/11/index.html">Nov &raquo;</a></td>
+		<td colspan="3" id="next"><a href="./../../../../2019/10/index.html">Oct &raquo;</a></td>
 	</tr>
 	</tfoot>
 
