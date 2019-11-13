@@ -183,32 +183,6 @@ max-width: 100%;
 					<div class="recent-posts">
 
 						
-<article id="post-90" class="post-90 post type-post status-publish format-standard hentry category-uncategorized">
-
-	<header class="entry-header">
-					<div class="entry-meta">
-				<span class="screen-reader-text">Posted on</span> <a href="./index.php/2019/11/13/arduino/index.html" rel="bookmark"><time class="entry-date published" datetime="2019-11-13T12:48:40+00:00">November 13, 2019</time><time class="updated" datetime="2019-11-13T13:30:53+00:00">November 13, 2019</time></a>			</div><!-- .entry-meta -->
-		
-		<h3 class="entry-title"><a href="./index.php/2019/11/13/arduino/index.html" rel="bookmark">使用Ardunio nano 开发自动小船</a></h3>	</header><!-- .entry-header -->
-
-	<div class="entry-summary">
-			</div><!-- .entry-summary -->
-
-</article><!-- #post-90 -->
-
-<article id="post-64" class="post-64 post type-post status-publish format-standard hentry category-uncategorized">
-
-	<header class="entry-header">
-					<div class="entry-meta">
-				<span class="screen-reader-text">Posted on</span> <a href="./index.php/2019/11/12/yoyo/index.html" rel="bookmark"><time class="entry-date published updated" datetime="2019-11-12T11:48:11+00:00">November 12, 2019</time></a>			</div><!-- .entry-meta -->
-		
-		<h3 class="entry-title"><a href="./index.php/2019/11/12/yoyo/index.html" rel="bookmark">yoyo</a></h3>	</header><!-- .entry-header -->
-
-	<div class="entry-summary">
-			</div><!-- .entry-summary -->
-
-</article><!-- #post-64 -->
-
 <article id="post-72" class="post-72 post type-post status-publish format-standard hentry category-uncategorized">
 
 	<header class="entry-header">
@@ -222,6 +196,36 @@ max-width: 100%;
 	</div><!-- .entry-summary -->
 
 </article><!-- #post-72 -->
+
+<article id="post-90" class="post-90 post type-post status-publish format-standard hentry category-uncategorized">
+
+	<header class="entry-header">
+					<div class="entry-meta">
+				<span class="screen-reader-text">Posted on</span> <a href="./index.php/2019/10/13/arduino/index.html" rel="bookmark"><time class="entry-date published" datetime="2019-10-13T12:48:40+00:00">October 13, 2019</time><time class="updated" datetime="2019-11-13T15:40:02+00:00">November 13, 2019</time></a>			</div><!-- .entry-meta -->
+		
+		<h3 class="entry-title"><a href="./index.php/2019/10/13/arduino/index.html" rel="bookmark">使用Ardunio nano 开发自动小船</a></h3>	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>功能 通过指南针模块反馈保持直行 碰到障碍物时掉头 掉头后保持直行 返回到起始点 器件清单 Arduino Nano x 1; Boat cover x 1; Battery case x 1; 1.5v Battery x 4; Breadboard x 1; LSM303 3 Axis Digital Compass sensor; Z6322 Ultrasonic Distance Sensor; Eletric motor x2 ; 硬件设置 程序逻辑 指南针模块的读取： 要将microTesla读数转换为0-360度指南针航向，需要使用atan2（）函数计算由Y和X轴读数定义的矢量的角度。结果将以弧度为单位，因此我们乘以180度，然后除以Pi以将其转换为度。同时加上360度将范围定在0到360度之间。 超声波距离传感器模块的读取： 给Trig发送一个低高低的短时间脉冲,触发测距,存储回波等待时间,pulseIn函数会等待引脚变为HIGH,开始计算时间,再等待变为LOW并停止计时,等待返回脉冲的长度。 声速是:340m/1s 换算成 34000cm / 1000000μs =&gt; 34 / 1000因为发送到接收,实际是相同距离走了2回,所以要除以2 距离(厘米) &hellip; </p>
+<p class="link-more"><a href="./index.php/2019/10/13/arduino/index.html" class="more-link">Continue reading<span class="screen-reader-text"> &#8220;使用Ardunio nano 开发自动小船&#8221;</span></a></p>
+	</div><!-- .entry-summary -->
+
+</article><!-- #post-90 -->
+
+<article id="post-47" class="post-47 post type-post status-publish format-standard hentry category-uncategorized">
+
+	<header class="entry-header">
+					<div class="entry-meta">
+				<span class="screen-reader-text">Posted on</span> <a href="./index.php/2018/10/20/applying-ant-colony-optimisation-to-the-travelling-salesman-problem/index.html" rel="bookmark"><time class="entry-date published" datetime="2018-10-20T10:48:08+00:00">October 20, 2018</time><time class="updated" datetime="2019-11-13T07:53:36+00:00">November 13, 2019</time></a>			</div><!-- .entry-meta -->
+		
+		<h3 class="entry-title"><a href="./index.php/2018/10/20/applying-ant-colony-optimisation-to-the-travelling-salesman-problem/index.html" rel="bookmark">蚁群算法在旅行商问题的应用</a></h3>	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>Applying Ant Colony Optimisation to the Travelling Salesman Problem problem description 旅行推销员问题：如果旅行推销员希望精确访问一次m个城市列表中的每个城市（其中，从城市i到城市j的旅行成本为cij），然后返回到本国城市，可能的最短路径是多少。 Algorithm Ant Colony Optimization ACO算法基于蚂蚁的行为，尝试寻找两点之间的最佳路径。 这是通过发送大量蚂蚁波来遍历图形来实现的。第一波蚂蚁随机地或基于一种简单的启发式方法（例如从任何节点走最短路径）遍历该图。 然后，信息素会沿着成功的路径分布，那些通过评分函数确定为相对较好的路径将接收更多量的信息素。然后，将进一步的蚂蚁发送出去遍历图，同时考虑信息素的水平和启发式，然后再次将信息素放置在与路径得分成比例的路径上。 这样，最优化的路径将累积最多量的信息素，并且更有可能被后代的蚂蚁选择。 Implementation 迭代阶段涉及迭代一定数量的世代，并在每次迭代中执行以下操作： 为每个蚂蚁生成一条路线。该路线由以下步骤生成： a. 随机选择一个起点 b. 根据信息素图和启发式因素的组合选择下一个要访问的位置。具体来说，使用以下公式为每个未访问的位置评分： 𝑠𝑐𝑜𝑟𝑒 = 𝑝ℎ𝑒𝑟𝑜𝑚𝑜𝑛𝑒𝛼**α ∗ ℎ𝑒𝑢𝑟𝑖𝑠𝑡𝑖𝑐**β 同时: 𝑝ℎ𝑒𝑟𝑜𝑚𝑜𝑛𝑒 = 从当前位置到未访问位置的路径上的信息素数量。 α = 信息素权重影响的比例因子。 ℎ𝑒𝑢𝑟𝑖𝑠𝑡𝑖𝑐 = 从当前位置到未访问位置的启发式值（在此解决方案中为1 /距离）。 β = 启发值权重影响的比例因子. c. 将下一个位置添加到路线并将其从未访问位置列表中删除。 根据行进的总距离对路线进行评分。 (cost= fun.decodingFun(RouteData,popsize,dmat,N)) 当找到更好的路线，将bestsolution更新 将分数标准化到 [100, 200]。 &hellip; </p>
+<p class="link-more"><a href="./index.php/2018/10/20/applying-ant-colony-optimisation-to-the-travelling-salesman-problem/index.html" class="more-link">Continue reading<span class="screen-reader-text"> &#8220;蚁群算法在旅行商问题的应用&#8221;</span></a></p>
+	</div><!-- .entry-summary -->
+
+</article><!-- #post-47 -->
 					</div><!-- .recent-posts -->
 							
 		</div><!-- .wrap -->

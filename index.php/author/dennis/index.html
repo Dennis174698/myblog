@@ -136,28 +136,6 @@ max-width: 100%;
 		<main id="main" class="site-main" role="main">
 
 					
-<article id="post-90" class="post-90 post type-post status-publish format-standard hentry category-uncategorized">
-		<header class="entry-header">
-		<div class="entry-meta"><span class="screen-reader-text">Posted on</span> <a href="./../../2019/11/13/arduino/index.html" rel="bookmark"><time class="entry-date published" datetime="2019-11-13T12:48:40+00:00">November 13, 2019</time><time class="updated" datetime="2019-11-13T13:30:53+00:00">November 13, 2019</time></a></div><!-- .entry-meta --><h2 class="entry-title"><a href="./../../2019/11/13/arduino/index.html" rel="bookmark">使用Ardunio nano 开发自动小船</a></h2>	</header><!-- .entry-header -->
-
-	
-	<div class="entry-content">
-			</div><!-- .entry-content -->
-
-	
-</article><!-- #post-90 -->
-
-<article id="post-64" class="post-64 post type-post status-publish format-standard hentry category-uncategorized">
-		<header class="entry-header">
-		<div class="entry-meta"><span class="screen-reader-text">Posted on</span> <a href="./../../2019/11/12/yoyo/index.html" rel="bookmark"><time class="entry-date published updated" datetime="2019-11-12T11:48:11+00:00">November 12, 2019</time></a></div><!-- .entry-meta --><h2 class="entry-title"><a href="./../../2019/11/12/yoyo/index.html" rel="bookmark">yoyo</a></h2>	</header><!-- .entry-header -->
-
-	
-	<div class="entry-content">
-			</div><!-- .entry-content -->
-
-	
-</article><!-- #post-64 -->
-
 <article id="post-72" class="post-72 post type-post status-publish format-standard hentry category-uncategorized">
 		<header class="entry-header">
 		<div class="entry-meta"><span class="screen-reader-text">Posted on</span> <a href="./../../2019/10/24/mpi/index.html" rel="bookmark"><time class="entry-date published" datetime="2019-10-24T07:57:20+00:00">October 24, 2019</time><time class="updated" datetime="2019-11-13T11:01:59+00:00">November 13, 2019</time></a></div><!-- .entry-meta --><h2 class="entry-title"><a href="./../../2019/10/24/mpi/index.html" rel="bookmark">使用Dijkstra算法，MPI并行编程解决全源最短路径问题（All-Pairs Shortest Paths Problem)</a></h2>	</header><!-- .entry-header -->
@@ -281,6 +259,143 @@ int *djstra(Graph *graph, int start, int end) {
 	
 </article><!-- #post-72 -->
 
+<article id="post-90" class="post-90 post type-post status-publish format-standard hentry category-uncategorized">
+		<header class="entry-header">
+		<div class="entry-meta"><span class="screen-reader-text">Posted on</span> <a href="./../../2019/10/13/arduino/index.html" rel="bookmark"><time class="entry-date published" datetime="2019-10-13T12:48:40+00:00">October 13, 2019</time><time class="updated" datetime="2019-11-13T15:40:02+00:00">November 13, 2019</time></a></div><!-- .entry-meta --><h2 class="entry-title"><a href="./../../2019/10/13/arduino/index.html" rel="bookmark">使用Ardunio nano 开发自动小船</a></h2>	</header><!-- .entry-header -->
+
+	
+	<div class="entry-content">
+		
+<h2>功能</h2>
+
+
+
+<ul><li>通过指南针模块反馈保持直行</li><li>碰到障碍物时掉头</li><li>掉头后保持直行</li><li>返回到起始点</li></ul>
+
+
+
+<h3>器件清单</h3>
+
+
+
+<ul><li>Arduino Nano x 1; </li><li>Boat cover x 1; </li><li>Battery case x 1; </li><li>1.5v Battery x 4; </li><li>Breadboard x 1; </li><li>LSM303 3 Axis Digital Compass sensor; </li><li>Z6322 Ultrasonic Distance Sensor;</li><li>Eletric motor x2 ; </li></ul>
+
+
+
+<h3>硬件设置</h3>
+
+
+
+<figure class="wp-block-image"><img src="./../../../wp-content/uploads/2019/11/hardware.png" alt="" class="wp-image-96" srcset="./../../../wp-content/uploads/2019/11/hardware.png 695w, ./../../../wp-content/uploads/2019/11/hardware-300x205.png 300w" sizes="(max-width: 695px) 100vw, 695px" /></figure>
+
+
+
+<h3>程序逻辑</h3>
+
+
+
+<figure class="wp-block-image"><img src="./../../../wp-content/uploads/2019/11/workflow.png" alt="" class="wp-image-97" srcset="./../../../wp-content/uploads/2019/11/workflow.png 954w, ./../../../wp-content/uploads/2019/11/workflow-300x206.png 300w, ./../../../wp-content/uploads/2019/11/workflow-768x526.png 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></figure>
+
+
+
+<h4>指南针模块的读取：</h4>
+
+
+
+<p>要将microTesla读数转换为0-360度指南针航向，需要使用atan2（）函数计算由Y和X轴读数定义的矢量的角度。结果将以弧度为单位，因此我们乘以180度，然后除以Pi以将其转换为度。同时加上360度将范围定在0到360度之间。</p>
+
+
+
+<pre class="wp-block-code"><code>float compassRead(float heading){
+  /* Get a new sensor event */ 
+  sensors_event_t   event; 
+  mag.getEvent(&amp;event);
+  
+  float Pi = 3.14159;
+  
+  // Calculate the angle of the vector y,x
+  heading = (atan2(event.magnetic.y,event.magnetic.x) * 180) / Pi;// 计算arctan（x，y）
+  
+  // Normalize to 0-360
+  if (heading &lt; 0)
+  {
+    heading = 360 + heading;
+  }
+  return heading;
+}
+</code></pre>
+
+
+
+<h4>超声波距离传感器模块的读取：</h4>
+
+
+
+<p>给Trig发送一个低高低的短时间脉冲,触发测距,存储回波等待时间,pulseIn函数会等待引脚变为HIGH,开始计算时间,再等待变为LOW并停止计时,等待返回脉冲的长度。</p>
+
+
+
+<p>声速是:340m/1s 换算成 34000cm / 1000000μs =&gt; 34 / 1000<br>因为发送到接收,实际是相同距离走了2回,所以要除以2<br> 距离(厘米)  =  (回波时间 * (34 / 1000)) / 2<br> 简化后的计算公式为 (回波时间 * 17)/ 1000 cm</p>
+
+
+
+<pre class="wp-block-code"><code>void distance(){
+  digitalWrite(Trig, LOW); 
+  delayMicroseconds(2);    
+  digitalWrite(Trig,HIGH); 
+  delayMicroseconds(10);    
+  digitalWrite(Trig, LOW); 
+  
+  temp = float(pulseIn(Echo, HIGH)); 
+  //calculte the time between HIGH to LOW
+  
+  
+  //34000cm / 1000000μs => 34 / 1000
+  //
+  //distance(cm)  =  (temp * (34 / 1000)) / 2
+  // (temp * 17)/ 1000
+  
+  cm = (temp * 17 )/1000; //transfer to cm
+}</code></pre>
+
+
+
+<h4>servo转向角度:</h4>
+
+
+
+<p>转向角度=初始角度-实时角度<br>
+特殊情况1：<br>
+船身角度330°转到30°，转向角度=实时角度-初始角度：30°-330°+360° = 60°<br>
+Servo偏向等于90°+60°=150°<br>
+特殊情况2：<br>
+船身角度30°转到330°，转向角度=初始角度-实时角度：30°-330°+360° = 60°<br>
+Servo偏向等于90°-60° = 30°</p>
+
+
+
+<figure class="wp-block-image"><img src="./../../../wp-content/uploads/2019/11/angle.png" alt="" class="wp-image-99" srcset="./../../../wp-content/uploads/2019/11/angle.png 910w, ./../../../wp-content/uploads/2019/11/angle-300x114.png 300w, ./../../../wp-content/uploads/2019/11/angle-768x291.png 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></figure>
+
+
+
+<pre class="wp-block-code"><code>    turnAngle = int(init_angle)-int(angle);
+    if(turnAngle>180){
+      turnAngle = int(angle)-int(init_angle)+360;
+      servoValue = 90+turnAngle;
+    }
+    else if(turnAngle&lt;=-180){
+       turnAngle+=360;
+       servoValue = 90-turnAngle;
+    }
+    else if(turnAngle>-180&amp;&amp;turnAngle&lt;180)
+    {
+      servoValue = 90-turnAngle;
+    }</code></pre>
+	</div><!-- .entry-content -->
+
+	
+</article><!-- #post-90 -->
+
 <article id="post-47" class="post-47 post type-post status-publish format-standard hentry category-uncategorized">
 		<header class="entry-header">
 		<div class="entry-meta"><span class="screen-reader-text">Posted on</span> <a href="./../../2018/10/20/applying-ant-colony-optimisation-to-the-travelling-salesman-problem/index.html" rel="bookmark"><time class="entry-date published" datetime="2018-10-20T10:48:08+00:00">October 20, 2018</time><time class="updated" datetime="2019-11-13T07:53:36+00:00">November 13, 2019</time></a></div><!-- .entry-meta --><h2 class="entry-title"><a href="./../../2018/10/20/applying-ant-colony-optimisation-to-the-travelling-salesman-problem/index.html" rel="bookmark">蚁群算法在旅行商问题的应用</a></h2>	</header><!-- .entry-header -->
@@ -384,13 +499,10 @@ int *djstra(Graph *graph, int start, int end) {
 <aside id="secondary" class="widget-area" role="complementary" aria-label="Blog Sidebar">
 			<section id="recent-posts-4" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
-					<a href="./../../2019/11/13/arduino/index.html">使用Ardunio nano 开发自动小船</a>
-									</li>
-											<li>
-					<a href="./../../2019/11/12/yoyo/index.html">yoyo</a>
-									</li>
-											<li>
 					<a href="./../../2019/10/24/mpi/index.html">使用Dijkstra算法，MPI并行编程解决全源最短路径问题（All-Pairs Shortest Paths Problem)</a>
+									</li>
+											<li>
+					<a href="./../../2019/10/13/arduino/index.html">使用Ardunio nano 开发自动小船</a>
 									</li>
 											<li>
 					<a href="./../../2018/10/20/applying-ant-colony-optimisation-to-the-travelling-salesman-problem/index.html">蚁群算法在旅行商问题的应用</a>
@@ -426,7 +538,7 @@ int *djstra(Graph *graph, int start, int end) {
 		<td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
 	</tr>
 	<tr>
-		<td>11</td><td><a href="./../../2019/11/12/index.html" aria-label="Posts published on November 12, 2019">12</a></td><td id="today"><a href="./../../2019/11/13/index.html" aria-label="Posts published on November 13, 2019">13</a></td><td>14</td><td>15</td><td>16</td><td>17</td>
+		<td>11</td><td>12</td><td id="today">13</td><td>14</td><td>15</td><td>16</td><td>17</td>
 	</tr>
 	<tr>
 		<td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
