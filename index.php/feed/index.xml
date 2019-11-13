@@ -12,7 +12,7 @@
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../../index.html</link>
 	<description>杂技程序员</description>
-	<lastBuildDate>Wed, 13 Nov 2019 15:40:02 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 13 Nov 2019 16:03:42 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -281,6 +281,14 @@ Servo偏向等于90°-60° = 30°</p>
     {
       servoValue = 90-turnAngle;
     }</code></pre>
+
+
+
+<p>servo 会控制船舵偏向，从而达到控制船身前进方向的效果。</p>
+
+
+
+<p>项目地址： <a href="https://github.com/Dennis174698/auto_boat">https://github.com/Dennis174698/auto_boat</a></p>
 ]]></content:encoded>
 							<wfw:commentRss>./../2019/10/13/arduino/feed/index.html</wfw:commentRss>
 		<slash:comments>0</slash:comments>
