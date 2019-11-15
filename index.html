@@ -212,20 +212,19 @@ max-width: 100%;
 
 </article><!-- #post-90 -->
 
-<article id="post-47" class="post-47 post type-post status-publish format-standard hentry category-uncategorized">
+<article id="post-107" class="post-107 post type-post status-publish format-standard hentry category-uncategorized">
 
 	<header class="entry-header">
 					<div class="entry-meta">
-				<span class="screen-reader-text">Posted on</span> <a href="./index.php/2018/10/20/applying-ant-colony-optimisation-to-the-travelling-salesman-problem/index.html" rel="bookmark"><time class="entry-date published" datetime="2018-10-20T10:48:08+00:00">October 20, 2018</time><time class="updated" datetime="2019-11-13T07:53:36+00:00">November 13, 2019</time></a>			</div><!-- .entry-meta -->
+				<span class="screen-reader-text">Posted on</span> <a href="./index.php/2019/05/15/slitherlink-puzzle-game/index.html" rel="bookmark"><time class="entry-date published" datetime="2019-05-15T12:35:34+00:00">May 15, 2019</time><time class="updated" datetime="2019-11-15T12:50:09+00:00">November 15, 2019</time></a>			</div><!-- .entry-meta -->
 		
-		<h3 class="entry-title"><a href="./index.php/2018/10/20/applying-ant-colony-optimisation-to-the-travelling-salesman-problem/index.html" rel="bookmark">蚁群算法在旅行商问题的应用</a></h3>	</header><!-- .entry-header -->
+		<h3 class="entry-title"><a href="./index.php/2019/05/15/slitherlink-puzzle-game/index.html" rel="bookmark">slitherlink puzzle game</a></h3>	</header><!-- .entry-header -->
 
 	<div class="entry-summary">
-		<p>Applying Ant Colony Optimisation to the Travelling Salesman Problem problem description 旅行推销员问题：如果旅行推销员希望精确访问一次m个城市列表中的每个城市（其中，从城市i到城市j的旅行成本为cij），然后返回到本国城市，可能的最短路径是多少。 Algorithm Ant Colony Optimization ACO算法基于蚂蚁的行为，尝试寻找两点之间的最佳路径。 这是通过发送大量蚂蚁波来遍历图形来实现的。第一波蚂蚁随机地或基于一种简单的启发式方法（例如从任何节点走最短路径）遍历该图。 然后，信息素会沿着成功的路径分布，那些通过评分函数确定为相对较好的路径将接收更多量的信息素。然后，将进一步的蚂蚁发送出去遍历图，同时考虑信息素的水平和启发式，然后再次将信息素放置在与路径得分成比例的路径上。 这样，最优化的路径将累积最多量的信息素，并且更有可能被后代的蚂蚁选择。 Implementation 迭代阶段涉及迭代一定数量的世代，并在每次迭代中执行以下操作： 为每个蚂蚁生成一条路线。该路线由以下步骤生成： a. 随机选择一个起点 b. 根据信息素图和启发式因素的组合选择下一个要访问的位置。具体来说，使用以下公式为每个未访问的位置评分： 𝑠𝑐𝑜𝑟𝑒 = 𝑝ℎ𝑒𝑟𝑜𝑚𝑜𝑛𝑒𝛼**α ∗ ℎ𝑒𝑢𝑟𝑖𝑠𝑡𝑖𝑐**β 同时: 𝑝ℎ𝑒𝑟𝑜𝑚𝑜𝑛𝑒 = 从当前位置到未访问位置的路径上的信息素数量。 α = 信息素权重影响的比例因子。 ℎ𝑒𝑢𝑟𝑖𝑠𝑡𝑖𝑐 = 从当前位置到未访问位置的启发式值（在此解决方案中为1 /距离）。 β = 启发值权重影响的比例因子. c. 将下一个位置添加到路线并将其从未访问位置列表中删除。 根据行进的总距离对路线进行评分。 (cost= fun.decodingFun(RouteData,popsize,dmat,N)) 当找到更好的路线，将bestsolution更新 将分数标准化到 [100, 200]。 &hellip; </p>
-<p class="link-more"><a href="./index.php/2018/10/20/applying-ant-colony-optimisation-to-the-travelling-salesman-problem/index.html" class="more-link">Continue reading<span class="screen-reader-text"> &#8220;蚁群算法在旅行商问题的应用&#8221;</span></a></p>
+		<p>slitherlink slitherlink game: 数回：游戏由0,1,2,3四个数字组成。每一个数字，代表四周划线的数目，并在最后成为一个不间断 、不分岔的回路。 把点与点以直线和横线相连，使之成为一个回路，且只能有一个回路。四点之间的数字代表在其四周的线的数目。 在没有数字的地方，划线的数目没有任何限制，而0的四周则不能有任何划线。路线不能交叉，也不能有分岔。 Run Run.java samples 点击finish 检测是否完成游戏 finished ：完成游戏 wrong number ：数字周围边数错误 dangling end: 未完成回路 branching line ：回路有分岔 disconnected line： 有未连接的线 项目地址：https://github.com/Dennis174698/slitherlink</p>
 	</div><!-- .entry-summary -->
 
-</article><!-- #post-47 -->
+</article><!-- #post-107 -->
 					</div><!-- .recent-posts -->
 							
 		</div><!-- .wrap -->

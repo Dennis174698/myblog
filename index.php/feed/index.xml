@@ -12,7 +12,7 @@
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../../index.html</link>
 	<description>杂技程序员</description>
-	<lastBuildDate>Wed, 13 Nov 2019 16:19:45 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 15 Nov 2019 12:50:09 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -291,6 +291,62 @@ Servo偏向等于90°-60° = 30°</p>
 <p>项目地址： <a href="https://github.com/Dennis174698/auto_boat">https://github.com/Dennis174698/auto_boat</a></p>
 ]]></content:encoded>
 							<wfw:commentRss>./../2019/10/13/arduino/feed/index.html</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>slitherlink puzzle game</title>
+		<link>./../2019/05/15/slitherlink-puzzle-game/index.html</link>
+				<comments>./../2019/05/15/slitherlink-puzzle-game/index.html#respond</comments>
+				<pubDate>Wed, 15 May 2019 12:35:34 +0000</pubDate>
+		<dc:creator><![CDATA[dennis]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">./../../index.html?p=107</guid>
+				<description><![CDATA[slitherlink slitherlink game: 数回：游戏由0,1,2,3四个数字组成。每一个数字，代表四周划线的数目，并在最后成为一个不间断 、不分岔的回路。 把点与点以直线和横线相连，使之成为一个回路，且只能有一个回路。四点之间的数字代表在其四周的线的数目。 在没有数字的地方，划线的数目没有任何限制，而0的四周则不能有任何划线。路线不能交叉，也不能有分岔。 Run Run.java samples 点击finish 检测是否完成游戏 finished ：完成游戏 wrong number ：数字周围边数错误 dangling end: 未完成回路 branching line ：回路有分岔 disconnected line： 有未连接的线 项目地址：https://github.com/Dennis174698/slitherlink]]></description>
+								<content:encoded><![CDATA[
+<h1>slitherlink</h1>
+
+
+
+<p><a href="https://en.wikipedia.org/wiki/Slitherlink">slitherlink game</a>:</p>
+
+
+
+<p>数回：游戏由0,1,2,3四个数字组成。每一个数字，代表四周划线的数目，并在最后成为一个不间断<br> 、不分岔的回路。<br> 把点与点以直线和横线相连，使之成为一个回路，且只能有一个回路。四点之间的数字代表在其四周的线的数目。<br> 在没有数字的地方，划线的数目没有任何限制，而0的四周则不能有任何划线。路线不能交叉，也不能有分岔。</p>
+
+
+
+<p><br></p>
+
+
+
+<h2>Run</h2>
+
+
+
+<p>Run.java</p>
+
+
+
+<h2>samples</h2>
+
+
+
+<figure class="wp-block-image"><img src="https://github.com/Dennis174698/slitherlink/raw/master/1.PNG" alt=""/></figure>
+
+
+
+<p>点击finish 检测是否完成游戏</p>
+
+
+
+<p>finished ：完成游戏   wrong number ：数字周围边数错误 dangling end: 未完成回路 branching line ：回路有分岔 disconnected line： 有未连接的线</p>
+
+
+
+<p>项目地址：https://github.com/Dennis174698/slitherlink</p>
+]]></content:encoded>
+							<wfw:commentRss>./../2019/05/15/slitherlink-puzzle-game/feed/index.html</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
