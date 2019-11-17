@@ -135,6 +135,87 @@ max-width: 100%;
 		<main id="main" class="site-main" role="main">
 
 			
+<article id="post-111" class="post-111 post type-post status-publish format-standard hentry category-uncategorized">
+		<header class="entry-header">
+		<div class="entry-meta"><span class="screen-reader-text">Posted on</span> <a href="./../2019/11/17/wordemmbedding/index.html" rel="bookmark"><time class="entry-date published" datetime="2019-11-17T08:14:22+00:00">November 17, 2019</time><time class="updated" datetime="2019-11-17T09:43:19+00:00">November 17, 2019</time></a></div><!-- .entry-meta --><h2 class="entry-title"><a href="./../2019/11/17/wordemmbedding/index.html" rel="bookmark">NLP之WordEmbedding</a></h2>	</header><!-- .entry-header -->
+
+	
+	<div class="entry-content">
+		
+<p>简单来说，Word Embedding 是将自然语言表示的单词转换为计算机能够理解的向量或矩阵形式的技术。是将词嵌入到一个由神经网络的隐藏层权重构成的空间中，让语义相近的词在这个空间中距离也是相近的。由于要考虑多种因素比如词的语义（同义词近义词）、语料中词之间的关系（上下文）和向量的维度（处理复杂度）等等，我们希望近义词或者表示同类事物的单词之间的距离可以理想地近，只有拿到很理想的单词表示形式，才更容易地去做翻译、问答、信息抽取等进一步的工作。</p>
+
+
+
+<figure class="wp-block-image"><img src="./../../wp-content/uploads/2019/11/word1-1024x388.png" alt="" class="wp-image-115" srcset="./../../wp-content/uploads/2019/11/word1-1024x388.png 1024w, ./../../wp-content/uploads/2019/11/word1-300x114.png 300w, ./../../wp-content/uploads/2019/11/word1-768x291.png 768w, ./../../wp-content/uploads/2019/11/word1.png 1064w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></figure>
+
+
+
+<p>如上图所示，在性别的维度上，king的投影和man的投影距离是十分相近的。</p>
+
+
+
+<h2>One-hot coding</h2>
+
+
+
+<p>处理文本数据中单词的一般方法是对文本进行one-hot coding。</p>
+
+
+
+<p>one-hot是最简单的一种处理方式。通俗地去讲，把语料中的词汇去重取出，按照一定的顺序（字典序、出现顺序等）排列为词汇表，则每一个单词都可以表示为一个长度为N的向量，N为词汇表长度，即单词总数。该向量中，除了该词所在的分量为1，其余均置为0。    例如，有语料库如下：</p>
+
+
+
+<p>John likes to watch movies. Mary likes movies too.</p>
+
+
+
+<p>John also likes to watch football games.</p>
+
+
+
+<p>假设我们的词汇表排序结果如下：</p>
+
+
+
+<p>{&#8220;John&#8221;: 1, &#8220;likes&#8221;: 2, &#8220;to&#8221;: 3, &#8220;watch&#8221;: 4, &#8220;movies&#8221;: 5, &#8220;also&#8221;:6, &#8220;football&#8221;: 7, &#8220;games&#8221;: 8, &#8220;Mary&#8221;: 9, &#8220;too&#8221;: 10}</p>
+
+
+
+<p>那么则有如下word的向量表示：</p>
+
+
+
+<p>John: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]</p>
+
+
+
+<p>likes: [0, 1, 0, 0, 0, 0, 0, 0, 0, 0] &#8230;</p>
+
+
+
+<p>在现实中，文字词汇中将有成千上万的独特单词。对于这些单词，使用这样的one-hotc coding矢量（vector）进行计算将非常低效，因为one-hot 矢量中的大多数值将为0。因此，将发生在one-hot 矢量和第一个隐藏层之间的矩阵计算,在输出中，大部分将是0值。</p>
+
+
+
+<p>我们使用embedding来解决此问题并大大提高我们的网络效率。embedding 就像一个完全连接的层。我们将这一层称为“嵌入层”，将权重称为“嵌入权重”。<br> 现在，我们不用在输入和隐藏层之间进行矩阵乘法，而是直接从嵌入权重矩阵中获取值。我们之所以这样做是因为将one-hot点向量与权重矩阵相乘会返回对应于输入单位“ 1”的索引的矩阵行。</p>
+
+
+
+<figure class="wp-block-image"><img src="./../../wp-content/uploads/2019/11/word3.png" alt="" class="wp-image-116" srcset="./../../wp-content/uploads/2019/11/word3.png 877w, ./../../wp-content/uploads/2019/11/word3-300x128.png 300w, ./../../wp-content/uploads/2019/11/word3-768x328.png 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></figure>
+
+
+
+<p>因此，我们将此权重矩阵用作查找表。我们将单词编码为整数，例如，“ cool”编码为512，“ hot”编码为764。然后，要获取“ cool”的隐藏层输出值，我们只需要在权重矩阵中查找第512行即可。此过程称为嵌入查找。隐藏层输出中的维数为嵌入维。</p>
+
+
+
+<figure class="wp-block-image"><img src="./../../wp-content/uploads/2019/11/word4.png" alt="" class="wp-image-117" srcset="./../../wp-content/uploads/2019/11/word4.png 812w, ./../../wp-content/uploads/2019/11/word4-300x251.png 300w, ./../../wp-content/uploads/2019/11/word4-768x642.png 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></figure>
+	</div><!-- .entry-content -->
+
+	
+</article><!-- #post-111 -->
+
 <article id="post-72" class="post-72 post type-post status-publish format-standard hentry category-uncategorized">
 		<header class="entry-header">
 		<div class="entry-meta"><span class="screen-reader-text">Posted on</span> <a href="./../2019/10/24/mpi/index.html" rel="bookmark"><time class="entry-date published" datetime="2019-10-24T07:57:20+00:00">October 24, 2019</time><time class="updated" datetime="2019-11-13T11:01:59+00:00">November 13, 2019</time></a></div><!-- .entry-meta --><h2 class="entry-title"><a href="./../2019/10/24/mpi/index.html" rel="bookmark">使用Dijkstra算法，MPI并行编程解决全源最短路径问题（All-Pairs Shortest Paths Problem)</a></h2>	</header><!-- .entry-header -->
@@ -559,6 +640,9 @@ Servo偏向等于90°-60° = 30°</p>
 <aside id="secondary" class="widget-area" role="complementary" aria-label="Blog Sidebar">
 			<section id="recent-posts-4" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
+					<a href="./../2019/11/17/wordemmbedding/index.html">NLP之WordEmbedding</a>
+									</li>
+											<li>
 					<a href="./../2019/10/24/mpi/index.html">使用Dijkstra算法，MPI并行编程解决全源最短路径问题（All-Pairs Shortest Paths Problem)</a>
 									</li>
 											<li>
@@ -601,7 +685,7 @@ Servo偏向等于90°-60° = 30°</p>
 		<td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
 	</tr>
 	<tr>
-		<td>11</td><td>12</td><td>13</td><td>14</td><td id="today">15</td><td>16</td><td>17</td>
+		<td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td id="today"><a href="./../2019/11/17/index.html" aria-label="Posts published on November 17, 2019">17</a></td>
 	</tr>
 	<tr>
 		<td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
@@ -661,7 +745,7 @@ Servo偏向等于90°-60° = 30°</p>
 </ul></div>					</nav><!-- .social-navigation -->
 					<div class="site-info">
 		<a href="https://wordpress.org/" class="imprint">
-		</a>
+		Proudly powered by WordPress	</a>
 </div><!-- .site-info -->
 			</div><!-- .wrap -->
 		</footer><!-- #colophon -->

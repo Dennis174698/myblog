@@ -6,12 +6,13 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-<title>October 24, 2019 &#8211; Dennis_Chen</title>
+<title>NLP之WordEmbedding &#8211; Dennis_Chen</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
-<link rel="alternate" type="application/rss+xml" title="Dennis_Chen &raquo; Feed" href="./../../../feed/index.html" />
-<link rel="alternate" type="application/rss+xml" title="Dennis_Chen &raquo; Comments Feed" href="./../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Dennis_Chen &raquo; Feed" href="./../../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Dennis_Chen &raquo; Comments Feed" href="./../../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Dennis_Chen &raquo; NLP之WordEmbedding Comments Feed" href="./feed/index.html" />
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.4"}};
 			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -30,23 +31,29 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-	<link rel='stylesheet' id='wp-block-library-css'  href='./../../../../wp-includes/css/dist/block-library/style.min.css?ver=5.2.4' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-block-library-theme-css'  href='./../../../../wp-includes/css/dist/block-library/theme.min.css?ver=5.2.4' type='text/css' media='all' />
+	<link rel='stylesheet' id='wp-block-library-css'  href='./../../../../../wp-includes/css/dist/block-library/style.min.css?ver=5.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='./../../../../../wp-includes/css/dist/block-library/theme.min.css?ver=5.2.4' type='text/css' media='all' />
 <link rel='stylesheet' id='twentyseventeen-fonts-css'  href='https://fonts.googleapis.com/css?family=Libre+Franklin%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C800%2C800i&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='twentyseventeen-style-css'  href='./../../../../wp-content/themes/twentyseventeen/style.css?ver=5.2.4' type='text/css' media='all' />
-<link rel='stylesheet' id='twentyseventeen-block-style-css'  href='./../../../../wp-content/themes/twentyseventeen/assets/css/blocks.css?ver=1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyseventeen-style-css'  href='./../../../../../wp-content/themes/twentyseventeen/style.css?ver=5.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyseventeen-block-style-css'  href='./../../../../../wp-content/themes/twentyseventeen/assets/css/blocks.css?ver=1.1' type='text/css' media='all' />
 <!--[if lt IE 9]>
 <link rel='stylesheet' id='twentyseventeen-ie8-css'  href='./wp-content/themes/twentyseventeen/assets/css/ie8.css?ver=1.0' type='text/css' media='all' />
 <![endif]-->
 <!--[if lt IE 9]>
 <script type='text/javascript' src='./wp-content/themes/twentyseventeen/assets/js/html5.js?ver=3.7.3'></script>
 <![endif]-->
-<script type='text/javascript' src='./../../../../wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
-<script type='text/javascript' src='./../../../../wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<link rel='https://api.w.org/' href='./../../../wp-json/index.html' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../../../../xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../../../../wp-includes/wlwmanifest.xml" /> 
+<script type='text/javascript' src='./../../../../../wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='./../../../../../wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='./../../../../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../../../../../xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../../../../../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='使用Dijkstra算法，MPI并行编程解决全源最短路径问题（All-Pairs Shortest Paths Problem)' href='./../../../10/24/mpi/index.html' />
 <meta name="generator" content="WordPress 5.2.4" />
+<link rel="canonical" href="./index.html" />
+<link rel='shortlink' href='./../../../../../index.html?p=111' />
+<link rel="alternate" type="application/json+oembed" href="./../../../../wp-json/oembed/1.0/embed/index.html?url=.%2Findex.php%2F2019%2F11%2F17%2Fwordemmbedding%2F" />
+<link rel="alternate" type="text/xml+oembed" href="./../../../../wp-json/oembed/1.0/embed/index.html?url=.%2Findex.php%2F2019%2F11%2F17%2Fwordemmbedding%2F&#038;format=xml" />
+<link rel="pingback" href="./../../../../../xmlrpc.php">
 		<style type="text/css" id="wp-custom-css">
 			.wrap {
 /* margin-left: auto; */
@@ -78,7 +85,7 @@ max-width: 100%;
 }		</style>
 		</head>
 
-<body class="archive date wp-embed-responsive hfeed has-header-image has-sidebar page-two-column colors-light">
+<body class="post-template-default single single-post postid-111 single-format-standard wp-embed-responsive has-header-image has-sidebar colors-light">
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
@@ -87,14 +94,14 @@ max-width: 100%;
 		<div class="custom-header">
 
 		<div class="custom-header-media">
-			<div id="wp-custom-header" class="wp-custom-header"><img src="./../../../../wp-content/themes/twentyseventeen/assets/images/header.jpg" width="2000" height="1200" alt="Dennis_Chen" /></div>		</div>
+			<div id="wp-custom-header" class="wp-custom-header"><img src="./../../../../../wp-content/themes/twentyseventeen/assets/images/header.jpg" width="2000" height="1200" alt="Dennis_Chen" /></div>		</div>
 
 	<div class="site-branding">
 	<div class="wrap">
 
 		
 		<div class="site-branding-text">
-							<p class="site-title"><a href="./../../../../index.html" rel="home">Dennis_Chen</a></p>
+							<p class="site-title"><a href="./../../../../../index.html" rel="home">Dennis_Chen</a></p>
 			
 							<p class="site-description">杂技程序员</p>
 					</div><!-- .site-branding-text -->
@@ -111,10 +118,10 @@ max-width: 100%;
 	<button class="menu-toggle" aria-controls="top-menu" aria-expanded="false">
 		<svg class="icon icon-bars" aria-hidden="true" role="img"> <use href="#icon-bars" xlink:href="#icon-bars"></use> </svg><svg class="icon icon-close" aria-hidden="true" role="img"> <use href="#icon-close" xlink:href="#icon-close"></use> </svg>Menu	</button>
 
-	<div class="menu-top-menu-container"><ul id="top-menu" class="menu"><li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-16"><a href="./../../../../index.html">Home</a></li>
-<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-18"><a href="./../../../blog/index.html">Blog</a></li>
-<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="./../../../about/index.html">About me</a></li>
-<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="./../../../contact/index.html">Contact</a></li>
+	<div class="menu-top-menu-container"><ul id="top-menu" class="menu"><li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-16"><a href="./../../../../../index.html">Home</a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-18"><a href="./../../../../blog/index.html">Blog</a></li>
+<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="./../../../../about/index.html">About me</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="./../../../../contact/index.html">Contact</a></li>
 </ul></div>
 	</nav><!-- #site-navigation -->
 				</div><!-- .wrap -->
@@ -127,160 +134,133 @@ max-width: 100%;
 		<div id="content" class="site-content">
 
 <div class="wrap">
-
-			<header class="page-header">
-			<h1 class="page-title">Day: October 24, 2019</h1>		</header><!-- .page-header -->
-	
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-					
-<article id="post-72" class="post-72 post type-post status-publish format-standard hentry category-uncategorized">
+			
+<article id="post-111" class="post-111 post type-post status-publish format-standard hentry category-uncategorized">
 		<header class="entry-header">
-		<div class="entry-meta"><span class="screen-reader-text">Posted on</span> <a href="./mpi/index.html" rel="bookmark"><time class="entry-date published" datetime="2019-10-24T07:57:20+00:00">October 24, 2019</time><time class="updated" datetime="2019-11-13T11:01:59+00:00">November 13, 2019</time></a></div><!-- .entry-meta --><h2 class="entry-title"><a href="./mpi/index.html" rel="bookmark">使用Dijkstra算法，MPI并行编程解决全源最短路径问题（All-Pairs Shortest Paths Problem)</a></h2>	</header><!-- .entry-header -->
+		<div class="entry-meta"><span class="posted-on"><span class="screen-reader-text">Posted on</span> <a href="./index.html" rel="bookmark"><time class="entry-date published" datetime="2019-11-17T08:14:22+00:00">November 17, 2019</time><time class="updated" datetime="2019-11-17T09:43:19+00:00">November 17, 2019</time></a></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="./../../../../author/dennis/index.html">dennis</a></span></span></div><!-- .entry-meta --><h1 class="entry-title">NLP之WordEmbedding</h1>	</header><!-- .entry-header -->
 
 	
 	<div class="entry-content">
 		
-<p>该项目的目标是设计并行算法，并使用Dijkstra算法来解决全源最短路径问题（All-Pairs Shortest Paths Problem) 。</p>
+<p>简单来说，Word Embedding 是将自然语言表示的单词转换为计算机能够理解的向量或矩阵形式的技术。是将词嵌入到一个由神经网络的隐藏层权重构成的空间中，让语义相近的词在这个空间中距离也是相近的。由于要考虑多种因素比如词的语义（同义词近义词）、语料中词之间的关系（上下文）和向量的维度（处理复杂度）等等，我们希望近义词或者表示同类事物的单词之间的距离可以理想地近，只有拿到很理想的单词表示形式，才更容易地去做翻译、问答、信息抽取等进一步的工作。</p>
 
 
 
-<p><a href="https://zh.wikipedia.org/wiki/%E6%88%B4%E5%85%8B%E6%96%AF%E7%89%B9%E6%8B%89%E7%AE%97%E6%B3%95">Dijkstra算法</a><br><a href="https://en.wikipedia.org/wiki/Message_Passing_Interface">mpi</a>  </p>
+<figure class="wp-block-image"><img src="./../../../../../wp-content/uploads/2019/11/word1-1024x388.png" alt="" class="wp-image-115" srcset="./../../../../../wp-content/uploads/2019/11/word1-1024x388.png 1024w, ./../../../../../wp-content/uploads/2019/11/word1-300x114.png 300w, ./../../../../../wp-content/uploads/2019/11/word1-768x291.png 768w, ./../../../../../wp-content/uploads/2019/11/word1.png 1064w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></figure>
 
 
 
-<p>全源最短路径问题： 确定给定图中每对顶点之间的最短图形距离。<br>在全源最短路径问题中，每个顶点到所有顶点的最短距离可以分别计算。因此，MPI框架可用于并行计算最短距离，每个进程负责一部分顶点计算。根据顶点数量和平行比例平均分配所有顶点。在每个进程中，根据当前进程号和进程总数确定每个进程的计算范围。</p>
+<p>如上图所示，在性别的维度上，king的投影和man的投影距离是十分相近的。</p>
 
 
 
-<p>首先，程序在根进程中读取图形的输入数据，并通过MPI_Bcast函数将图形的顶点数和权重矩阵分配给每个进程。为了方便处理，将图的数据读入并存储在一维数组中。接下来，在每个过程中，使用djkstra算法计算从每个顶点到范围内所有顶点的最短距离。计算完成后，通过MPI_Gatherv函数将每个进程的计算结果收集到根进程中，最后将结果保存到根进程中的文件中。</p>
+<h2>One-hot coding</h2>
 
 
 
-<h2>部分代码</h2>
+<p>处理文本数据中单词的一般方法是对文本进行one-hot coding。</p>
 
 
 
-<p>djkstra algorithm 的实现</p>
+<p>one-hot是最简单的一种处理方式。通俗地去讲，把语料中的词汇去重取出，按照一定的顺序（字典序、出现顺序等）排列为词汇表，则每一个单词都可以表示为一个长度为N的向量，N为词汇表长度，即单词总数。该向量中，除了该词所在的分量为1，其余均置为0。    例如，有语料库如下：</p>
 
 
 
-<pre class="wp-block-code"><code>/**
- * Using djkstra algorithm to calculate the shortest distance between vertices
- *
- * @param graph Graph struct
- * @param start start number of the vertex that calculates the shortest distance
- * @param end end number of the vertex that calculates the shortest distance
- * @return
- */
-int *djstra(Graph *graph, int start, int end) {
-    int n = graph->vertices_number;
-    int *local_result = (int *) malloc(sizeof(int) * (end - start + 1) * n);
-    memcpy(local_result, graph->adjacency_matrix + start * n, (end - start + 1) * n * sizeof(int));
-    int *mark = (int *) malloc(sizeof(int) * n);
-    int vertex_no = start;
-    for (; vertex_no &lt;= end; vertex_no++) {
-        memset(mark, 0, sizeof(int) * n);
-        int i = 0;
-        while (i++ &lt; n) {
-            int offset = (vertex_no - start) * n;
-            int vertex = get_min(local_result + offset, mark, n);
-            mark[vertex] = 1;
-            int j = 0;
-            for (; j &lt; n; j++) {
-                if (mark[j] == 1) {
-                    continue;
-                }
-                // updating distance
-                if (local_result[offset + vertex] + graph->adjacency_matrix[vertex * n + j] &lt;local_result[offset + j]) {
-                    local_result[offset + j] = local_result[offset + vertex] + graph->adjacency_matrix[vertex * n + j];
-                }
-            }
-        }
-    }
-    return local_result;
-}</code></pre>
+<p>John likes to watch movies. Mary likes movies too.</p>
 
 
 
-<div class="wp-block-image"><figure class="aligncenter"><img src="./../../../../wp-content/uploads/2019/11/Dijkstra_Animation.gif" alt="" class="wp-image-85"/></figure></div>
+<p>John also likes to watch football games.</p>
 
 
 
-<p>连续迭代，每次找到距离最短的顶点，更新从该顶点到其他顶点的距离，直到找到到所有顶点到起点的最短距离。这是使用Dijkstra 单源最短路径算法，将此函数broadcast到MPI的其他节点，并分配给其相应的图中的顶点并完成此算法，就可以解决全源最短路径问题。</p>
+<p>假设我们的词汇表排序结果如下：</p>
 
 
 
-<h2>输入文件</h2>
+<p>{&#8220;John&#8221;: 1, &#8220;likes&#8221;: 2, &#8220;to&#8221;: 3, &#8220;watch&#8221;: 4, &#8220;movies&#8221;: 5, &#8220;also&#8221;:6, &#8220;football&#8221;: 7, &#8220;games&#8221;: 8, &#8220;Mary&#8221;: 9, &#8220;too&#8221;: 10}</p>
 
 
 
-<p>输入文件格式本质上是有向加权图的扁平邻接矩阵。所有权重均为正整数。这些是二进制文件，因此需要将其读取。每个文件包含：</p>
+<p>那么则有如下word的向量表示：</p>
 
 
 
-<ul><li>顶点数 (numV)</li><li>numV x numV 个整数，指定所有连接的权重<br>例如：<br></li></ul>
+<p>John: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]</p>
 
 
 
-<div class="wp-block-image"><figure class="aligncenter"><img src="./../../../../wp-content/uploads/2019/11/graph.png" alt="" class="wp-image-79" srcset="./../../../../wp-content/uploads/2019/11/graph.png 372w, ./../../../../wp-content/uploads/2019/11/graph-300x217.png 300w" sizes="(max-width: 372px) 100vw, 372px" /></figure></div>
+<p>likes: [0, 1, 0, 0, 0, 0, 0, 0, 0, 0] &#8230;</p>
 
 
 
-<p>对应如下矩阵：</p>
+<p>在现实中，文字词汇中将有成千上万的独特单词。对于这些单词，使用这样的one-hotc coding矢量（vector）进行计算将非常低效，因为one-hot 矢量中的大多数值将为0。因此，将发生在one-hot 矢量和第一个隐藏层之间的矩阵计算,在输出中，大部分将是0值。</p>
 
 
 
-<div class="wp-block-image"><figure class="aligncenter"><img src="./../../../../wp-content/uploads/2019/11/matirx.png" alt="" class="wp-image-80"/><figcaption>4 0 15 1 1 0 0 3 0 1 3 0 0 0 1 1 0 </figcaption></figure></div>
+<p>我们使用embedding来解决此问题并大大提高我们的网络效率。embedding 就像一个完全连接的层。我们将这一层称为“嵌入层”，将权重称为“嵌入权重”。<br> 现在，我们不用在输入和隐藏层之间进行矩阵乘法，而是直接从嵌入权重矩阵中获取值。我们之所以这样做是因为将one-hot点向量与权重矩阵相乘会返回对应于输入单位“ 1”的索引的矩阵行。</p>
 
 
 
-<h2>使用</h2>
+<figure class="wp-block-image"><img src="./../../../../../wp-content/uploads/2019/11/word3.png" alt="" class="wp-image-116" srcset="./../../../../../wp-content/uploads/2019/11/word3.png 877w, ./../../../../../wp-content/uploads/2019/11/word3-300x128.png 300w, ./../../../../../wp-content/uploads/2019/11/word3-768x328.png 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></figure>
 
 
 
-<p><code>./run.sh</code>  host 文件定义了MPI 所需要的节点数量，最优使用数量在16个左右</p>
+<p>因此，我们将此权重矩阵用作查找表。我们将单词编码为整数，例如，“ cool”编码为512，“ hot”编码为764。然后，要获取“ cool”的隐藏层输出值，我们只需要在权重矩阵中查找第512行即可。此过程称为嵌入查找。隐藏层输出中的维数为嵌入维。</p>
 
 
 
-<h2>输出</h2>
-
-
-
-<p><code>./print_bin_result test_data/xxx.out</code></p>
-
-
-
-<p>项目地址：<a href="https://github.com/Dennis174698/dijkstra_mpi">https://github.com/Dennis174698/dijkstra_mpi</a><br></p>
+<figure class="wp-block-image"><img src="./../../../../../wp-content/uploads/2019/11/word4.png" alt="" class="wp-image-117" srcset="./../../../../../wp-content/uploads/2019/11/word4.png 812w, ./../../../../../wp-content/uploads/2019/11/word4-300x251.png 300w, ./../../../../../wp-content/uploads/2019/11/word4-768x642.png 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></figure>
 	</div><!-- .entry-content -->
 
 	
-</article><!-- #post-72 -->
+</article><!-- #post-111 -->
 
+<div id="comments" class="comments-area">
+
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="./index.html#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="./../../../../../wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /><label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='111' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>			</form>
+			</div><!-- #respond -->
+	
+</div><!-- #comments -->
+
+	<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="./../../../10/24/mpi/index.html" rel="prev"><span class="screen-reader-text">Previous Post</span><span aria-hidden="true" class="nav-subtitle">Previous</span> <span class="nav-title"><span class="nav-title-icon-wrapper"><svg class="icon icon-arrow-left" aria-hidden="true" role="img"> <use href="#icon-arrow-left" xlink:href="#icon-arrow-left"></use> </svg></span>使用Dijkstra算法，MPI并行编程解决全源最短路径问题（All-Pairs Shortest Paths Problem)</span></a></div></div>
+	</nav>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	
 <aside id="secondary" class="widget-area" role="complementary" aria-label="Blog Sidebar">
 			<section id="recent-posts-4" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
-					<a href="./../../11/17/wordemmbedding/index.html">NLP之WordEmbedding</a>
+					<a href="./index.html">NLP之WordEmbedding</a>
 									</li>
 											<li>
-					<a href="./mpi/index.html">使用Dijkstra算法，MPI并行编程解决全源最短路径问题（All-Pairs Shortest Paths Problem)</a>
+					<a href="./../../../10/24/mpi/index.html">使用Dijkstra算法，MPI并行编程解决全源最短路径问题（All-Pairs Shortest Paths Problem)</a>
 									</li>
 											<li>
-					<a href="./../13/arduino/index.html">使用Ardunio nano 开发自动小船</a>
+					<a href="./../../../10/13/arduino/index.html">使用Ardunio nano 开发自动小船</a>
 									</li>
 											<li>
-					<a href="./../../05/15/slitherlink-puzzle-game/index.html">slitherlink puzzle game</a>
+					<a href="./../../../05/15/slitherlink-puzzle-game/index.html">slitherlink puzzle game</a>
 									</li>
 											<li>
-					<a href="./../../../2018/10/20/applying-ant-colony-optimisation-to-the-travelling-salesman-problem/index.html">蚁群算法在旅行商问题的应用</a>
+					<a href="./../../../../2018/10/20/applying-ant-colony-optimisation-to-the-travelling-salesman-problem/index.html">蚁群算法在旅行商问题的应用</a>
 									</li>
 					</ul>
 		</section><section id="calendar-3" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
-	<caption>October 2019</caption>
+	<caption>November 2019</caption>
 	<thead>
 	<tr>
 		<th scope="col" title="Monday">M</th>
@@ -295,33 +275,33 @@ int *djstra(Graph *graph, int start, int end) {
 
 	<tfoot>
 	<tr>
-		<td colspan="3" id="prev"><a href="./../../05/index.html">&laquo; May</a></td>
+		<td colspan="3" id="prev"><a href="./../../../10/index.html">&laquo; Oct</a></td>
 		<td class="pad">&nbsp;</td>
-		<td colspan="3" id="next"><a href="./../../11/index.html">Nov &raquo;</a></td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
 	</tr>
 	</tfoot>
 
 	<tbody>
 	<tr>
-		<td colspan="1" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+		<td colspan="4" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td>
 	</tr>
 	<tr>
-		<td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td><a href="./../13/index.html" aria-label="Posts published on October 13, 2019">13</a></td>
+		<td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
 	</tr>
 	<tr>
-		<td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+		<td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td id="today"><a href="./../index.html" aria-label="Posts published on November 17, 2019">17</a></td>
 	</tr>
 	<tr>
-		<td>21</td><td>22</td><td>23</td><td><a href="./index.html" aria-label="Posts published on October 24, 2019">24</a></td><td>25</td><td>26</td><td>27</td>
+		<td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
 	</tr>
 	<tr>
-		<td>28</td><td>29</td><td>30</td><td>31</td>
-		<td class="pad" colspan="3">&nbsp;</td>
+		<td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+		<td class="pad" colspan="1">&nbsp;</td>
 	</tr>
 	</tbody>
 	</table></div></section><section id="search-3" class="widget widget_search"><h2 class="widget-title">Search</h2>
 
-<form role="search" method="get" class="search-form" action="./../../../../index.html">
+<form role="search" method="get" class="search-form" action="./../../../../../index.html">
 	<label for="search-form-1">
 		<span class="screen-reader-text">Search for:</span>
 	</label>
@@ -352,7 +332,7 @@ int *djstra(Graph *graph, int start, int end) {
 </div>
 		</section><section id="search-4" class="widget widget_search"><h2 class="widget-title">Search</h2>
 
-<form role="search" method="get" class="search-form" action="./../../../../index.html">
+<form role="search" method="get" class="search-form" action="./../../../../../index.html">
 	<label for="search-form-2">
 		<span class="screen-reader-text">Search for:</span>
 	</label>
@@ -380,11 +360,12 @@ int *djstra(Graph *graph, int start, int end) {
 var twentyseventeenScreenReaderText = {"quote":"<svg class=\"icon icon-quote-right\" aria-hidden=\"true\" role=\"img\"> <use href=\"#icon-quote-right\" xlink:href=\"#icon-quote-right\"><\/use> <\/svg>","expand":"Expand child menu","collapse":"Collapse child menu","icon":"<svg class=\"icon icon-angle-down\" aria-hidden=\"true\" role=\"img\"> <use href=\"#icon-angle-down\" xlink:href=\"#icon-angle-down\"><\/use> <span class=\"svg-fallback icon-angle-down\"><\/span><\/svg>"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='./../../../../wp-content/themes/twentyseventeen/assets/js/skip-link-focus-fix.js?ver=1.0'></script>
-<script type='text/javascript' src='./../../../../wp-content/themes/twentyseventeen/assets/js/navigation.js?ver=1.0'></script>
-<script type='text/javascript' src='./../../../../wp-content/themes/twentyseventeen/assets/js/global.js?ver=1.0'></script>
-<script type='text/javascript' src='./../../../../wp-content/themes/twentyseventeen/assets/js/jquery.scrollTo.js?ver=2.1.2'></script>
-<script type='text/javascript' src='./../../../../wp-includes/js/wp-embed.min.js?ver=5.2.4'></script>
+<script type='text/javascript' src='./../../../../../wp-content/themes/twentyseventeen/assets/js/skip-link-focus-fix.js?ver=1.0'></script>
+<script type='text/javascript' src='./../../../../../wp-content/themes/twentyseventeen/assets/js/navigation.js?ver=1.0'></script>
+<script type='text/javascript' src='./../../../../../wp-content/themes/twentyseventeen/assets/js/global.js?ver=1.0'></script>
+<script type='text/javascript' src='./../../../../../wp-content/themes/twentyseventeen/assets/js/jquery.scrollTo.js?ver=2.1.2'></script>
+<script type='text/javascript' src='./../../../../../wp-includes/js/comment-reply.min.js?ver=5.2.4'></script>
+<script type='text/javascript' src='./../../../../../wp-includes/js/wp-embed.min.js?ver=5.2.4'></script>
 <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-behance" viewbox="0 0 37 32">
