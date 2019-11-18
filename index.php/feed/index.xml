@@ -12,7 +12,7 @@
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../../index.html</link>
 	<description>杂技程序员</description>
-	<lastBuildDate>Mon, 18 Nov 2019 05:52:51 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 18 Nov 2019 06:10:06 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -21,9 +21,9 @@
 	<generator>https://wordpress.org/?v=5.2.4</generator>
 	<item>
 		<title>Word2Vec</title>
-		<link>./../2019/11/18/word2vec/index.html</link>
-				<comments>./../2019/11/18/word2vec/index.html#respond</comments>
-				<pubDate>Mon, 18 Nov 2019 04:49:30 +0000</pubDate>
+		<link>./../2019/11/03/word2vec/index.html</link>
+				<comments>./../2019/11/03/word2vec/index.html#respond</comments>
+				<pubDate>Sun, 03 Nov 2019 04:49:30 +0000</pubDate>
 		<dc:creator><![CDATA[dennis]]></dc:creator>
 				<category><![CDATA[Uncategorized]]></category>
 
@@ -76,7 +76,7 @@
 
 <p> 将目标词输入网络。该模型输出C个概率分布。<br> 对于每个context 位置，我们获得V个概率的C个概率分布，每个单词一个。<br> 在这两种模型下，网络都使用反向传播进行学习。</p>
 ]]></content:encoded>
-							<wfw:commentRss>./../2019/11/18/word2vec/feed/index.html</wfw:commentRss>
+							<wfw:commentRss>./../2019/11/03/word2vec/feed/index.html</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 							</item>
 		<item>
