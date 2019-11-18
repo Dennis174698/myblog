@@ -136,6 +136,63 @@ max-width: 100%;
 		<main id="main" class="site-main" role="main">
 
 					
+<article id="post-119" class="post-119 post type-post status-publish format-standard hentry category-uncategorized">
+		<header class="entry-header">
+		<div class="entry-meta"><span class="screen-reader-text">Posted on</span> <a href="./../../2019/11/18/word2vec/index.html" rel="bookmark"><time class="entry-date published" datetime="2019-11-18T04:49:30+00:00">November 18, 2019</time><time class="updated" datetime="2019-11-18T05:52:51+00:00">November 18, 2019</time></a></div><!-- .entry-meta --><h2 class="entry-title"><a href="./../../2019/11/18/word2vec/index.html" rel="bookmark">Word2Vec</a></h2>	</header><!-- .entry-header -->
+
+	
+	<div class="entry-content">
+		
+<p>Word2Vec是使用浅层神经网络学习词嵌入的最流行技术之一。它是由Tomas Mikolov于2013年在Google上开发的。</p>
+
+
+
+<p>当使用one-hot 编码并将其可视化时，将其想象为一个多维空间，其中每个单词占据一个维，而与其余单词无关（沿着其他维没有投影）。这意味着词与词之间没有任何关联性，这是不正确的。我们的目标是使上下文相似的单词占据紧密的空间位置。在数学上，此类向量之间的角度的余弦值应接近1，即角度应接近0。</p>
+
+
+
+<p>为此引入了一个单词对其他单词的某种依赖性。在该词的上下文中的词将在这种依赖性中获得更大的份额。Word2Vec是一种构造此类嵌入的方法，有两种方法（都涉及神经网络）来获得它：CBOW（Commom Bag of Words） 和 skipgram</p>
+
+
+
+<h2>CBOW:</h2>
+
+
+
+<p>此方法将每个单词的上下文作为输入，并尝试预测与上下文相对应的单词。考虑我以下例子：Have a great day<br> 将 great 作为input 输入到神经网络。使用单个上下文输入单词great预测目标单词  day。更具体地说，使用输入字词的 one-hot coding，并与目标字词的 one-hot coding 相比，测量输出误差。在预测目标词的过程中，学习目标词的向量表示。</p>
+
+
+
+<figure class="wp-block-image"><img src="./../../../wp-content/uploads/2019/11/w2v1.png" alt="" class="wp-image-123" srcset="./../../../wp-content/uploads/2019/11/w2v1.png 724w, ./../../../wp-content/uploads/2019/11/w2v1-300x158.png 300w" sizes="(max-width: 724px) 100vw, 724px" /></figure>
+
+
+
+<p>输入词是一个大小为V的热编码矢量。隐藏层包含N个神经元，输出是V长度矢量，其元素为softmax值。Wvn是将输入x映射到隐藏层的权重矩阵（V * N维矩阵).Wnv是将隐藏层输出映射到最终输出层的权重矩阵（N * V维矩阵）。隐藏层神经元仅将输入的加权总和复制到下一层。没有像sigmoid，tanh或ReLU这样的激活函数。唯一的非线性是输出层中的softmax计算。以上模型使用单个词来预测目标。也可以使用多个词来做同样的事情。</p>
+
+
+
+<figure class="wp-block-image is-resized"><img src="./../../../wp-content/uploads/2019/11/w2v2.png" alt="" class="wp-image-124" width="539" height="599" srcset="./../../../wp-content/uploads/2019/11/w2v2.png 631w, ./../../../wp-content/uploads/2019/11/w2v2-270x300.png 270w" sizes="(max-width: 539px) 100vw, 539px" /></figure>
+
+
+
+<p>上面的模型采用C个词。当Wvn用于计算隐藏层输入时，我们对所有这些C上下文词输入取平均值。<br> 还有另一种方法可以做到这一点。我们可以使用目标词（我们要生成其表示形式）来预测上下文，并在此过程中生成表示形式。</p>
+
+
+
+<h2>Skip Gram</h2>
+
+
+
+<figure class="wp-block-image is-resized"><img src="./../../../wp-content/uploads/2019/11/w2v3.png" alt="" class="wp-image-125" width="558" height="672" srcset="./../../../wp-content/uploads/2019/11/w2v3.png 654w, ./../../../wp-content/uploads/2019/11/w2v3-249x300.png 249w" sizes="(max-width: 558px) 100vw, 558px" /></figure>
+
+
+
+<p> 将目标词输入网络。该模型输出C个概率分布。<br> 对于每个context 位置，我们获得V个概率的C个概率分布，每个单词一个。<br> 在这两种模型下，网络都使用反向传播进行学习。</p>
+	</div><!-- .entry-content -->
+
+	
+</article><!-- #post-119 -->
+
 <article id="post-111" class="post-111 post type-post status-publish format-standard hentry category-uncategorized">
 		<header class="entry-header">
 		<div class="entry-meta"><span class="screen-reader-text">Posted on</span> <a href="./../../2019/11/01/wordemmbedding/index.html" rel="bookmark"><time class="entry-date published" datetime="2019-11-01T08:14:22+00:00">November 1, 2019</time><time class="updated" datetime="2019-11-17T09:52:59+00:00">November 17, 2019</time></a></div><!-- .entry-meta --><h2 class="entry-title"><a href="./../../2019/11/01/wordemmbedding/index.html" rel="bookmark">NLP之WordEmbedding</a></h2>	</header><!-- .entry-header -->
@@ -641,6 +698,9 @@ Servo偏向等于90°-60° = 30°</p>
 <aside id="secondary" class="widget-area" role="complementary" aria-label="Blog Sidebar">
 			<section id="recent-posts-4" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
+					<a href="./../../2019/11/18/word2vec/index.html">Word2Vec</a>
+									</li>
+											<li>
 					<a href="./../../2019/11/01/wordemmbedding/index.html">NLP之WordEmbedding</a>
 									</li>
 											<li>
@@ -651,9 +711,6 @@ Servo偏向等于90°-60° = 30°</p>
 									</li>
 											<li>
 					<a href="./../../2019/05/15/slitherlink-puzzle-game/index.html">slitherlink puzzle game</a>
-									</li>
-											<li>
-					<a href="./../../2018/10/20/applying-ant-colony-optimisation-to-the-travelling-salesman-problem/index.html">蚁群算法在旅行商问题的应用</a>
 									</li>
 					</ul>
 		</section><section id="calendar-3" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
@@ -686,10 +743,10 @@ Servo偏向等于90°-60° = 30°</p>
 		<td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
 	</tr>
 	<tr>
-		<td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td id="today">17</td>
+		<td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td>
 	</tr>
 	<tr>
-		<td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
+		<td id="today"><a href="./../../2019/11/18/index.html" aria-label="Posts published on November 18, 2019">18</a></td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
 	</tr>
 	<tr>
 		<td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
