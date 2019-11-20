@@ -135,6 +135,159 @@ max-width: 100%;
 		<main id="main" class="site-main" role="main">
 
 			
+<article id="post-127" class="post-127 post type-post status-publish format-standard hentry category-uncategorized">
+		<header class="entry-header">
+		<div class="entry-meta"><span class="screen-reader-text">Posted on</span> <a href="./../2019/11/15/cnn/index.html" rel="bookmark"><time class="entry-date published" datetime="2019-11-15T03:38:44+00:00">November 15, 2019</time><time class="updated" datetime="2019-11-20T05:05:46+00:00">November 20, 2019</time></a></div><!-- .entry-meta --><h2 class="entry-title"><a href="./../2019/11/15/cnn/index.html" rel="bookmark">cnn   训练恶评区分模型</a></h2>	</header><!-- .entry-header -->
+
+	
+	<div class="entry-content">
+		
+<h3>训练集</h3>
+
+
+
+<p>数据集包含大量来自wikipedia的恶评，并且被分类为以下6个标签：</p>
+
+
+
+<ul><li><code>toxic</code></li><li><code>severe_toxic</code></li><li><code>obscene</code></li><li><code>threat</code></li><li><code>insult</code></li><li><code>identity_hate</code></li><li>创建一个模型来预测每个恶评在每种标签的可能性。</li></ul>
+
+
+
+<h3>基本参数</h3>
+
+
+
+<p>MAX_SEQUENCE_LENGTH = 100<br> MAX_VOCAB_SIZE = 20000<br> EMBEDDING_DIM = 100       #embedding dimenstion<br> VALIDATION_SPLIT = 0.2<br> BATCH_SIZE = 128<br> EPOCHS = 10</p>
+
+
+
+<p>读取golve做的词向量预训练的结果.word2vec 是通过glove预训练词向量构造的一个字典，每个单词都有一个对应的100维度的词向量,词向量来源于glove的预训练。</p>
+
+
+
+<pre class="wp-block-code"><code>word2vec = {}
+
+with open('D://software engineering/nlp_translate/glove.6B.100d.txt','r',encoding='utf-8') as f:
+    for line in f:
+        values = line.split()
+    word = values[0]
+    vec = np.asarray(values[1:], dtype='float32')
+    word2vec[word] = vec
+print('Found %s word vectors.' % len(word2vec))</code></pre>
+
+
+
+<p style="text-align:left">使用keras库里的文本和序列预处理的库,Tokenizer是一个用于向量化文本，或将文本转换为序列的类。</p>
+
+
+
+<pre class="wp-block-code"><code>train = pd.read_csv("D:/software engineering/nlp_translate/train.csv")
+sentences  =train["comment_text"].fillna("DUMMY_VALUE").values
+possible_lables = ["toxic","severe_toxic","obscene","threat","insult","identity_hate"]
+targets = train[possible_lables].values
+
+print("max sequence length:",max(len(s) for s in sentences))
+print("min sequence length:", min(len(s)for s in sentences))
+s=sorted(len(s) for s in sentences)
+print("median sequence length:", s[len(s)//2])
+
+#convert the sentences into integers
+tokenizer = Tokenizer(num_words = MAX_VOCAB_SIZE)
+tokenizer.fit_on_texts(sentences)
+sequences = tokenizer.texts_to_sequences(sentences)
+
+word2idx = tokenizer.word_index
+print('Found %s unique tokens.' %len(word2idx))
+
+data = pad_sequences(sequences,maxlen = MAX_SEQUENCE_LENGTH)
+print('Shape of data tensor:', data.shape)</code></pre>
+
+
+
+<p>利用train中的comment_text数据，先造了一个字典word2idx，每个单词都有一个对应的下标序号，texts_to_sequences()的作用则是构造了一个list,list的数字来源于word_index这个字典。</p>
+
+
+
+<p>如：单词nonsense，word2idx.get(&#8220;nonsense&#8221;)就是等于845。</p>
+
+
+
+<p>pad_seq则是在sequences的基础上进行了填充，填充至100,这样每个sequences的维度就一样了。</p>
+
+
+
+<p>构造一个embedding_matrix，只取了排名靠前的2W单词，并且把词向量填充进embedding_matrix。</p>
+
+
+
+<pre class="wp-block-code"><code>num_words = min(MAX_VOCAB_SIZE, len(word2idx) + 1)
+embedding_matrix = np.zeros((num_words, EMBEDDING_DIM))
+for word, i in word2idx.items():
+  if i &lt; MAX_VOCAB_SIZE:
+    embedding_vector = word2vec.get(word)
+    if embedding_vector is not None:
+      # words not found in embedding index will be all zeros.
+      embedding_matrix[i] = embedding_vector
+</code></pre>
+
+
+
+<p>将这个词向量矩阵加载到Embedding层中，设置trainable=False使得这个编码层不可再训练。如果输入数据不需要词的语义特征，简单使用Embedding层就可以得到一个对应的词向量矩阵，但如果需要语义特征，就需要把glove预训练好的词向量扔到Embedding层中。</p>
+
+
+
+<pre class="wp-block-code"><code>embedding_layer = Embedding(
+  num_words,
+  EMBEDDING_DIM,
+  weights=[embedding_matrix],
+  input_length=MAX_SEQUENCE_LENGTH,
+  trainable=False
+)</code></pre>
+
+
+
+<p>构造训练模型：</p>
+
+
+
+<pre class="wp-block-code"><code>input_ = Input(shape=(MAX_SEQUENCE_LENGTH,))
+x = embedding_layer(input_)
+x = Conv1D(128, 3, activation='relu')(x)
+x = MaxPooling1D(3)(x)
+x = Conv1D(128, 3, activation='relu')(x)
+x = MaxPooling1D(3)(x)
+x = Conv1D(128, 3, activation='relu')(x)
+x = GlobalMaxPooling1D()(x)
+x = Dense(128, activation='relu')(x)
+output = Dense(len(possible_lables), activation='sigmoid')(x)
+
+model = Model(input_, output)
+model.compile(loss='binary_crossentropy',optimizer='rmsprop',metrics=['accuracy'])
+
+print('Training model...')
+r = model.fit(data,targets,batch_size=BATCH_SIZE,epochs=EPOCHS,validation_split=VALIDATION_SPLIT)</code></pre>
+
+
+
+<h3>结果</h3>
+
+
+
+<figure class="wp-block-image"><img src="./../../wp-content/uploads/2019/11/t1.png" alt="" class="wp-image-133" srcset="./../../wp-content/uploads/2019/11/t1.png 757w, ./../../wp-content/uploads/2019/11/t1-300x190.png 300w" sizes="(max-width: 706px) 89vw, (max-width: 767px) 82vw, 740px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="./../../wp-content/uploads/2019/11/t2.png" alt="" class="wp-image-134" srcset="./../../wp-content/uploads/2019/11/t2.png 734w, ./../../wp-content/uploads/2019/11/t2-300x193.png 300w" sizes="(max-width: 734px) 100vw, 734px" /></figure>
+
+
+
+<p>代码地址：https://github.com/Dennis174698/toxic</p>
+	</div><!-- .entry-content -->
+
+	
+</article><!-- #post-127 -->
+
 <article id="post-119" class="post-119 post type-post status-publish format-standard hentry category-uncategorized">
 		<header class="entry-header">
 		<div class="entry-meta"><span class="screen-reader-text">Posted on</span> <a href="./../2019/11/03/word2vec/index.html" rel="bookmark"><time class="entry-date published" datetime="2019-11-03T04:49:30+00:00">November 3, 2019</time><time class="updated" datetime="2019-11-18T06:10:06+00:00">November 18, 2019</time></a></div><!-- .entry-meta --><h2 class="entry-title"><a href="./../2019/11/03/word2vec/index.html" rel="bookmark">Word2Vec</a></h2>	</header><!-- .entry-header -->
@@ -697,6 +850,9 @@ Servo偏向等于90°-60° = 30°</p>
 <aside id="secondary" class="widget-area" role="complementary" aria-label="Blog Sidebar">
 			<section id="recent-posts-4" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
 											<li>
+					<a href="./../2019/11/15/cnn/index.html">cnn   训练恶评区分模型</a>
+									</li>
+											<li>
 					<a href="./../2019/11/03/word2vec/index.html">Word2Vec</a>
 									</li>
 											<li>
@@ -707,9 +863,6 @@ Servo偏向等于90°-60° = 30°</p>
 									</li>
 											<li>
 					<a href="./../2019/10/13/arduino/index.html">使用Ardunio nano 开发自动小船</a>
-									</li>
-											<li>
-					<a href="./../2019/05/15/slitherlink-puzzle-game/index.html">slitherlink puzzle game</a>
 									</li>
 					</ul>
 		</section><section id="calendar-3" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
@@ -742,10 +895,10 @@ Servo偏向等于90°-60° = 30°</p>
 		<td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
 	</tr>
 	<tr>
-		<td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td>
+		<td>11</td><td>12</td><td>13</td><td>14</td><td><a href="./../2019/11/15/index.html" aria-label="Posts published on November 15, 2019">15</a></td><td>16</td><td>17</td>
 	</tr>
 	<tr>
-		<td id="today">18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
+		<td>18</td><td>19</td><td id="today">20</td><td>21</td><td>22</td><td>23</td><td>24</td>
 	</tr>
 	<tr>
 		<td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>

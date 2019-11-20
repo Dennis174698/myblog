@@ -183,6 +183,20 @@ max-width: 100%;
 					<div class="recent-posts">
 
 						
+<article id="post-127" class="post-127 post type-post status-publish format-standard hentry category-uncategorized">
+
+	<header class="entry-header">
+					<div class="entry-meta">
+				<span class="screen-reader-text">Posted on</span> <a href="./index.php/2019/11/15/cnn/index.html" rel="bookmark"><time class="entry-date published" datetime="2019-11-15T03:38:44+00:00">November 15, 2019</time><time class="updated" datetime="2019-11-20T05:05:46+00:00">November 20, 2019</time></a>			</div><!-- .entry-meta -->
+		
+		<h3 class="entry-title"><a href="./index.php/2019/11/15/cnn/index.html" rel="bookmark">cnn   训练恶评区分模型</a></h3>	</header><!-- .entry-header -->
+
+	<div class="entry-summary">
+		<p>训练集 数据集包含大量来自wikipedia的恶评，并且被分类为以下6个标签： toxic severe_toxic obscene threat insult identity_hate 创建一个模型来预测每个恶评在每种标签的可能性。 基本参数 MAX_SEQUENCE_LENGTH = 100 MAX_VOCAB_SIZE = 20000 EMBEDDING_DIM = 100 #embedding dimenstion VALIDATION_SPLIT = 0.2 BATCH_SIZE = 128 EPOCHS = 10 读取golve做的词向量预训练的结果.word2vec 是通过glove预训练词向量构造的一个字典，每个单词都有一个对应的100维度的词向量,词向量来源于glove的预训练。 使用keras库里的文本和序列预处理的库,Tokenizer是一个用于向量化文本，或将文本转换为序列的类。 利用train中的comment_text数据，先造了一个字典word2idx，每个单词都有一个对应的下标序号，texts_to_sequences()的作用则是构造了一个list,list的数字来源于word_index这个字典。 如：单词nonsense，word2idx.get(&#8220;nonsense&#8221;)就是等于845。 pad_seq则是在sequences的基础上进行了填充，填充至100,这样每个sequences的维度就一样了。 构造一个embedding_matrix，只取了排名靠前的2W单词，并且把词向量填充进embedding_matrix。 将这个词向量矩阵加载到Embedding层中，设置trainable=False使得这个编码层不可再训练。如果输入数据不需要词的语义特征，简单使用Embedding层就可以得到一个对应的词向量矩阵，但如果需要语义特征，就需要把glove预训练好的词向量扔到Embedding层中。 构造训练模型： 结果 代码地址：https://github.com/Dennis174698/toxic</p>
+	</div><!-- .entry-summary -->
+
+</article><!-- #post-127 -->
+
 <article id="post-119" class="post-119 post type-post status-publish format-standard hentry category-uncategorized">
 
 	<header class="entry-header">
@@ -211,20 +225,6 @@ max-width: 100%;
 	</div><!-- .entry-summary -->
 
 </article><!-- #post-111 -->
-
-<article id="post-72" class="post-72 post type-post status-publish format-standard hentry category-uncategorized">
-
-	<header class="entry-header">
-					<div class="entry-meta">
-				<span class="screen-reader-text">Posted on</span> <a href="./index.php/2019/10/24/mpi/index.html" rel="bookmark"><time class="entry-date published" datetime="2019-10-24T07:57:20+00:00">October 24, 2019</time><time class="updated" datetime="2019-11-13T11:01:59+00:00">November 13, 2019</time></a>			</div><!-- .entry-meta -->
-		
-		<h3 class="entry-title"><a href="./index.php/2019/10/24/mpi/index.html" rel="bookmark">使用Dijkstra算法，MPI并行编程解决全源最短路径问题（All-Pairs Shortest Paths Problem)</a></h3>	</header><!-- .entry-header -->
-
-	<div class="entry-summary">
-		<p>该项目的目标是设计并行算法，并使用Dijkstra算法来解决全源最短路径问题（All-Pairs Shortest Paths Problem) 。 Dijkstra算法mpi 全源最短路径问题： 确定给定图中每对顶点之间的最短图形距离。在全源最短路径问题中，每个顶点到所有顶点的最短距离可以分别计算。因此，MPI框架可用于并行计算最短距离，每个进程负责一部分顶点计算。根据顶点数量和平行比例平均分配所有顶点。在每个进程中，根据当前进程号和进程总数确定每个进程的计算范围。 首先，程序在根进程中读取图形的输入数据，并通过MPI_Bcast函数将图形的顶点数和权重矩阵分配给每个进程。为了方便处理，将图的数据读入并存储在一维数组中。接下来，在每个过程中，使用djkstra算法计算从每个顶点到范围内所有顶点的最短距离。计算完成后，通过MPI_Gatherv函数将每个进程的计算结果收集到根进程中，最后将结果保存到根进程中的文件中。 部分代码 djkstra algorithm 的实现 连续迭代，每次找到距离最短的顶点，更新从该顶点到其他顶点的距离，直到找到到所有顶点到起点的最短距离。这是使用Dijkstra 单源最短路径算法，将此函数broadcast到MPI的其他节点，并分配给其相应的图中的顶点并完成此算法，就可以解决全源最短路径问题。 输入文件 输入文件格式本质上是有向加权图的扁平邻接矩阵。所有权重均为正整数。这些是二进制文件，因此需要将其读取。每个文件包含： 顶点数 (numV) numV x numV 个整数，指定所有连接的权重例如： 对应如下矩阵： 使用 ./run.sh host 文件定义了MPI 所需要的节点数量，最优使用数量在16个左右 输出 ./print_bin_result test_data/xxx.out 项目地址：https://github.com/Dennis174698/dijkstra_mpi</p>
-	</div><!-- .entry-summary -->
-
-</article><!-- #post-72 -->
 					</div><!-- .recent-posts -->
 							
 		</div><!-- .wrap -->
